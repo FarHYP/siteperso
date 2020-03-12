@@ -36,7 +36,7 @@ main section {
     width: 60%;
     padding: 60px 50px 60px 0px ;
     margin-right: 8px;
-     border: 1px dashed yellow; 
+    /* border: 1px dashed yellow; */
 }
 
 .autoportrait {
@@ -49,13 +49,13 @@ main section {
     top: 0px;
     z-index: 5;
 
-     border: 1px dashed blue; 
+    /* border: 1px dashed blue; */
 }
 .autoportrait img {
     max-width: 500px;
     height: auto;
     margin: 0px auto;
-     border: 1px dotted red; 
+    /* border: 1px dotted red; */
 }
 /* figure 跟 caption 之間的10px要處理 */
 figcaption {
