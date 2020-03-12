@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*  ------------------------
+    CONTACT
+    ------------------------  */
+
+.contact {
+    display: block;
+    float: left;
+    margin-right: 60px;
+}
+
+.social_media {
+    display: block;
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-right: 60px;
+}
+
+.social_media img{
+    height: 300px;
+    width: auto;
+    margin: 0px auto;
+}
+
