@@ -10,7 +10,7 @@
 }
 .carousel-inner {
     min-width: 400px;
-    border: 1px dotted gray; 
+    /* border: 1px dotted gray; */
 }
 
 @media screen and (orientation: portrait) {
