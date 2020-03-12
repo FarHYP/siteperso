@@ -52,7 +52,7 @@ main section {
     /* border: 1px dashed blue; */
 }
 .autoportrait img {
-    max-width: 500px;
+    width: 400px;
     height: auto;
     margin: 0px auto;
     /* border: 1px dotted red; */
