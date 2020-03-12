@@ -9,14 +9,11 @@
     /* border: 1px dotted green; */
 }
 .carousel-inner {
+    min-width: 400px;
     border: 1px dotted gray; 
 }
 
 @media screen and (orientation: portrait) {
-    .carousel-inner {
-        min-width: 400px;
-        border: 1px dotted violet;
-    }
     .carousel-inner > .item > img {
         margin: 30px auto;
         max-height: 45vh;
