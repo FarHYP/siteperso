@@ -14,41 +14,73 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         
+        
+        <script type="text/javascript" src="js/voile.js"></script>
+        
         <link rel="stylesheet" href="css/reset.css" media="all">
         <link rel="stylesheet" href="css/style.css" media="all">
+        <link rel="stylesheet" href="css/a_propos.css" media="all">
     </head>
 
     <body>
-        <header class="logo">
-            <h1 class="logo_btn"><a href="index.html">Yi-Ping Huang</a></h1>
-            <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
-            <!-- 要加上效果：滑鼠滑過標題時 main區塊增加朦朧度 -->
-            <nav class="main_menu">
-                <ul>
-                    <li><a href="#">Installation&thinsp;/&thinsp;Sculpture </a></li>
-                    <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
-                    <li><a href="#">Estampe&thinsp;/&thinsp;Édition</a></li>
-                    <li><a href="#">Photographie</a></li>
-                    <li><a href="#">Performance</a></li>
-                    <li>&nbsp;</li>
-                    <li>&nbsp;</li>
-                    <li><a href="#">Actualité</a></li>
-                    <li><a href="#">Exposition</a></li>
-                    <li><a href="a_propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>           
+        <div id="voile"></div>
+        <header id="header">
+            <div class="logo" onmouseover="voiler()" onmouseout="devoiler()" >
+                <h1 class="logo_btn"><a href="index.html" >Yi-Ping Huang</a></h1>
+                <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
+                <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+                <nav class="main_menu">
+                    <ul>
+                        <li><a href="#">Installation&thinsp;/&thinsp;Sculpture </a></li>
+                        <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
+                        <li><a href="#">Estampe&thinsp;/&thinsp;Édition</a></li>
+                        <li><a href="#">Photographie</a></li>
+                        <li><a href="#">Performance</a></li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li><a href="#">Actualité</a></li>
+                        <li><a href="#">Exposition</a></li>
+                        <li><a href="a_propos.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>   
+            </div>        
         </header>
-        
         <main>
+            <!-- --------------------網頁變動內容 Main 開始----------------- -->
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
 
+            <!-- 解決縮排問題 修改文字 -->
+            <section class="contact">
+                <h2>Contact</h2>
+                <p>
+                    Yi-Ping Huang 黃伊萍<br>
+                    Basée à Taïwan. <br>
+                </p>
+                <p>
+                    far.huang.yp@gmail.com<br>
+                    P.O. Box 47-224 Taipei<br>
+                    Tapei City 10399<br>
+                    Taiwan
+                </p>
+                
+            </section>
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <!-- -------------------網頁變動內容 Main 結束------------------ -->
         </main>
             
            
-        
-        <footer>© 2020 Tous droits réservés</footer>
+        <!-- ----------------------版型 Footer 開始--------------------- -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- !!! foter 在index.html不導入，剩餘網頁頁面都須導入footer版型 !!! -->
+        <footer>&copy; 2020 Tous droits réservés</footer>
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- ----------------------版型 Footer 結束--------------------- -->
         
 
+
     </body>
+    
+
 </html>
 
