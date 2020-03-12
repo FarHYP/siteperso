@@ -40,6 +40,7 @@ main section {
 }
 
 .autoportrait {
+    width: 480px;
     display: block;    
     /*
     float: left;
@@ -49,21 +50,22 @@ main section {
     top: 0px;
     z-index: 5;
 
-    /* border: 1px dashed blue; */
+     border: 1px dashed blue; 
 }
 .autoportrait img {
-    width: 400px;
+    /* max-width: 500px; */
+    width: 480px;
     height: auto;
     margin: 0px auto;
-    /* border: 1px dotted red; */
+     border: 1px dotted red; 
 }
 /* figure 跟 caption 之間的10px要處理 */
 figcaption {
     display: inline-block;
     vertical-align: middle;
-    width: 480px;
+    /*width: 480px;*/
     line-height: 1.2em;
-    /* border: 1px dotted green; */
+    border: 1px dotted green;
 }
 
 .clearfix::after {
