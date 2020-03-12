@@ -42,14 +42,15 @@ main section {
 .autoportrait {
     width: 480px;
     display: block;    
-    /*
+    
     float: left;
-    */
+    
+    /*
     position: absolute;
     right: 40px;
     top: 0px;
-    z-index: 5;
-
+    z-index: 2;
+    */
      border: 1px dashed blue; 
 }
 .autoportrait img {
