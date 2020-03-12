@@ -125,12 +125,18 @@ main {
 }
 
 h2 {
-    display: none;
+    display: block;
     line-height: 6rem;
     font-size: 1.8rem;
     font-weight: 300;
+    /*border: 1px dotted red; */
+}
+h2.hidden_title {
+    display: block;
+    color: transparent;
     /* border: 1px dotted violet; */
 }
+
 h3 {
     line-height: 4rem;
     font-size: 1.6rem;
@@ -139,15 +145,15 @@ h3 {
 }
 
 main section {
-    margin-top: 20px;
-    padding: 60px 0px;
-    /* border: 1px dashed deeppink; */
+    margin-bottom: 20px;
+    padding-top: 60px;
+    /*border: 1px dashed deeppink; */
 }
 
 main p {
     display: block;
-    margin: 2rem auto;
-    /* border: 1px dotted violet; */
+    margin: 0px auto 2rem;
+    
 }
 
 /*  ************************

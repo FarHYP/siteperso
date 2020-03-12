@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*  ------------------------
     Slide Show
     ------------------------  */
@@ -9,12 +11,31 @@
 .carousel-inner {
     /* border: 1px dotted gray; */
 }
+
+@media screen and (orientation: portrait) {
+    .carousel-inner {
+        /*border: 1px dotted gray;*/
+    }
+    .carousel-inner > .item > img {
+        margin: 30px auto;
+        max-height: 45vh;
+        width: auto;
+        /*border: 1px dotted lightgreen; */
+    }
+}
+@media screen and (orientation: landscape) {
+    .carousel-inner > .item > img {
+        margin: 30px auto;
+        height: 73vh;
+        width: auto;
+        /* border: 1px dotted lightgreen; */
+    }
+}
+
 .carousel-inner > .item > img {
     margin: 30px auto;
-    max-height: 73vh;
-    min-height: 73vh;
+    height: 73vh;
     width: auto;
-    height: auto;
     /* border: 1px dotted lightgreen; */
 }
 

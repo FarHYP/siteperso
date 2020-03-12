@@ -1,25 +1,19 @@
 @charset "UTF-8";
 
-
-main section {
-    margin-top: 20px;
-}
-
-
-
 /*  ------------------------
     A PROPOS
     ------------------------  */
 .a_propos {
     margin: 30px auto 10px;
-    /* border: 1px dotted gray;   */
+    /*border: 1px dotted gray;  */
 }
 .intro {
     float: left;
     width: 60%;
-    padding: 60px 50px 60px 0px ;
+    /* padding: 60px 50px 60px 0px ;*/
+    padding-right: 50px;
     margin-right: 8px;
-    /* border: 1px dashed yellow; */
+    /*border: 1px dashed black; */
 }
 
 .autoportrait {
@@ -56,8 +50,8 @@ figcaption {
     content: '';
     display: block;
     clear: both;
-    z-index: -1;
     
+    /*z-index: -1;  */
 }
 
 
@@ -66,13 +60,13 @@ figcaption {
     PARCOURS
     ------------------------  */
 .parcours {
-    display: block;
-    padding: 60px 0px;
-    /* border: 1px dotted lightseagreen; */
+    /*display: block;*/
+    /*padding: 60px 0px;*/
+    /*border: 1px dotted lightseagreen; */
 }
 
 .parcours dl {
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 .parcours dd {
     margin-bottom: 2rem;
