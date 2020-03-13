@@ -3,7 +3,9 @@
 /*  ------------------------
     Slide Show
     ------------------------  */
-
+main {
+    padding: 10px;
+}
 #img_slideshow, #img_slideshow img {
     z-index: -10;
     /* border: 1px dotted green; */
