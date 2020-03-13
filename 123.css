@@ -57,20 +57,21 @@ h1 {
   left: 100px;
 }
 
-@media screen and (min-width: 601px) {
-  h1{
-      color:#03F;
-      font-size: 70px;   
-  }
-}
 @media screen and (max-width: 600px) {
   h1{
       color:#F00;
       font-size: 30px;
   }
 }
+@media screen and (min-width: 601px) {
+  h1{
+      color:#03F;
+      font-size: 70px;   
+  }
+}
 
-@media screen and (min-height: 300px) and (max-height: 500px){
+
+@media screen and (min-height: 300px) and (max-height: 600px){
   .toggle{
       color:#6F0;
   }
