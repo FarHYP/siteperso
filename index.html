@@ -18,7 +18,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         
+        <!--
         <script type="text/javascript" src="js/voile.js"></script>
+        -->
         
         <link rel="stylesheet" href="css/reset.css" media="all">
         <link rel="stylesheet" href="css/style.css" media="all">
@@ -28,13 +30,19 @@
     <body>
         <!-- ----------------------版型Header 開始-------------------- -->
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-        <div id="voile"></div>
         <header id="header">
-            <div class="logo" onmouseover="voiler()" onmouseout="devoiler()" >
+            <input type="checkbox" id="burger">
+            <label for="burger" class="toggle"></label>
+                
+            <div class="logo">
+            <!-- 
+            <div class="logo" onmouseover="voiler()" onmouseout="devoiler()" > -->
                 <h1 class="logo_btn"><a href="index.html" >Yi-Ping Huang</a></h1>
                 <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
+                
+                
                 <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
-                <nav class="main_menu">
+                <nav class="main_menu" id="topnav">
                     <ul>
                         <li><a href="#">Installation&thinsp;/&thinsp;Sculpture </a></li>
                         <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
@@ -49,7 +57,9 @@
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>   
-            </div>        
+            </div> 
+            <div id="voile"></div>
+        
         </header>
         <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
         <!-- ----------------------版型Header 結束-------------------- -->

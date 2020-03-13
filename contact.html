@@ -9,13 +9,17 @@
         <meta name="keywords" content="Artiste, Yi-Ping Huang, 黃伊萍"> 
         <title>Yi-Ping Huang / Artiste・Poète</title>
 
-        <!-- Import jQuery and Bootstrap JS library and Bootstrap CSS -->
+        <!-- Import jQuery and Bootstrap JS library and Bootstrap CSS for slide show -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         
-        
+        <!-- Import font-awesome for responsive dropdown menu -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--
         <script type="text/javascript" src="js/voile.js"></script>
+        -->
         
         <link rel="stylesheet" href="css/reset.css" media="all">
         <link rel="stylesheet" href="css/style.css" media="all">
@@ -23,13 +27,21 @@
     </head>
 
     <body>
-        <div id="voile"></div>
         <header id="header">
-            <div class="logo" onmouseover="voiler()" onmouseout="devoiler()" >
+            <input type="checkbox" id="burger">
+            <label for="burger" class="toggle"></label>
+
+            <!--<div class="logo" onmouseover="voiler()" onmouseout="devoiler()"> -->
+            <div class="logo">
                 <h1 class="logo_btn"><a href="index.html" >Yi-Ping Huang</a></h1>
                 <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
+
+                <!--
+                <a href="#" class="icon" id="toggle" onclick="show_menu()">&#9776;</a>
+                -->
+                
                 <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
-                <nav class="main_menu">
+                <nav class="main_menu" id="topnav">
                     <ul>
                         <li><a href="#">Installation&thinsp;/&thinsp;Sculpture </a></li>
                         <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
@@ -45,6 +57,7 @@
                     </ul>
                 </nav>   
             </div>        
+            <div id="voile"></div>   
         </header>
         <main>
             <!-- --------------------網頁變動內容 Main 開始----------------- -->
@@ -67,12 +80,16 @@
                 </section>
                 
                 <div class="social_media fb">
-                    <figure><img src="img/fb_portfolio_nuage.jpg" alt="facebook portfolio"></figure>
-                    <figcaption>Facebook</figcaption>
+                    <a href="#">
+                        <figure><img src="img/fb_portfolio_nuage.jpg" alt="facebook portfolio"></figure>
+                        <figcaption>Facebook</figcaption>
+                    </a>
                 </div>
                 <div class="social_media ig">
-                    <figure><img src="img/ig_portfolio_pied.jpg" alt="instagram portfolio"></figure>
-                    <figcaption>Instagram</figcaption>
+                    <a href="#">
+                        <figure><img src="img/ig_portfolio_pied.jpg" alt="instagram portfolio"></figure>
+                        <figcaption>Instagram</figcaption>
+                    </a>
                 </div>
             </div>
             
