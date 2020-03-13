@@ -34,7 +34,7 @@
 }
 
 .toggle, .toggle::before,.toggle::after {
-  transition: all 100ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 #burger:checked + .toggle {
   background-color: transparent;
@@ -50,4 +50,29 @@
 #burger:checked + .toggle::after {
   transform: rotate(-45deg);
 }
-  
+
+/* Small screen: burger */
+@media screen and (max-width: 600px) {
+  .toggle, .toggle::before, .toggle::after {
+    border-radius: 2px;
+    border: 3px solid white;
+    height: 9px;
+    width: 24px;
+    top: 22px;
+    right: 20px; 
+  }
+  .toggle::before {
+    top: 15px;
+    right: 20px;
+  }
+  .toggle::after {
+    top: 29px;
+    right: 20px;
+  }
+
+  #burger:checked + .toggle::before, #burger:checked + .toggle::after {
+    top: 24px;
+    border: 0px;
+    height: 2px;
+  }
+}
