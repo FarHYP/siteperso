@@ -16,12 +16,23 @@ main {
 }
 
 @media screen and (orientation: portrait) {
-    .carousel-inner > .item > img {
-        margin: 30px auto;
-        max-height: 45vh;
-        width: auto;
-        /*border: 1px dotted lightgreen; */
+    @media (max-width: 600px) {
+        .carousel-inner > .item > img {
+            margin: 30px auto;
+            max-height: 48vh;
+            width: auto;
+            /*border: 1px dotted lightred; */
+        }
     }
+    @media (min-width: 601px) {
+        .carousel-inner > .item > img {
+            margin: 30px auto;
+            max-height: 52vh;
+            width: auto;
+            /*border: 1px dotted lightgreen; */
+        }
+    }
+    
 }
 @media screen and (orientation: landscape) {
     .carousel-inner > .item > img {
