@@ -57,7 +57,7 @@ header {
     position: fixed;
     left: 0px;
     z-index: 0 ; 
-     border: 1px dotted blue; 
+    /* border: 1px dotted blue; */
 }
 
 .logo {
@@ -137,7 +137,7 @@ header {
 /*  ------------------------
     Responsive dropdown 
     ------------------------  */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px), @media screen and (max-height: 400px) {
     
     #burger:checked ~ .logo .main_menu {
         display: block;
