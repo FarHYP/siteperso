@@ -52,7 +52,7 @@
 }
 
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 601px) {
   h1{
       color:#03F;
       font-size: 70px;
@@ -63,7 +63,7 @@
     background-color: #03F;
   }
 }
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+@media only screen and (min-width: 321px) and (max-width: 600px) {
   h1{
       color:#F00;
       font-size: 30px;
