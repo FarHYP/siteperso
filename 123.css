@@ -81,3 +81,13 @@
     background-color: #6F0;
   }
 }
+
+@media only handheld {
+  h1{
+      color: pink;
+      font-size: 30px;
+  }
+  #burger:checked + .toggle::before {
+    background-color: pink;
+  }
+}
