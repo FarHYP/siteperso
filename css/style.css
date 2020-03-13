@@ -57,7 +57,7 @@ header {
     position: fixed;
     left: 0px;
     z-index: 0 ; 
-    /* border: 1px dotted blue; */
+     border: 1px dotted blue; 
 }
 
 .logo {
@@ -147,6 +147,7 @@ header {
     }
     #burger:checked ~ #voile {
         display: block;
+        opacity: 0.9;
     }
 
 }
