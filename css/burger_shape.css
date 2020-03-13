@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*  ------------------------
+    Burger to X 
+    ------------------------  */
+#burger {
+  display: block;
+  position: fixed;
+  top: 35px;
+  right: 80px;
+}
+
+.toggle, .toggle::before, .toggle::after {
+  cursor: pointer;
+  border-radius: 3px;
+  height: 10px;
+  width: 35px;
+  background: #666;
+  border: 3px solid white;
+  display: block;
+  content: '';
+  
+  position: fixed;
+  top: 35px;
+  right: 40px; 
+}
+.toggle::before {
+  top: 25px;
+  right: 40px;
+}
+.toggle::after {
+  top: 45px;
+  right: 40px;
+}
+
+.toggle, .toggle::before,.toggle::after {
+  transition: all 100ms ease-in-out;
+}
+#burger:checked + .toggle {
+  background-color: transparent;
+}
+#burger:checked + .toggle::before, #burger:checked + .toggle::after {
+  top: 38px;
+  border: 0px;
+  height: 4px;
+}
+#burger:checked + .toggle::before {
+  transform: rotate(45deg);
+}
+#burger:checked + .toggle::after {
+  transform: rotate(-45deg);
+}
+  

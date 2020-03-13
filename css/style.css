@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "burger_shape.css"; 
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -26,9 +27,9 @@ a:link, a:visited, a:active {
 
 
 header, main, footer {
-    margin: 0px 40px;
-    padding: 10px 40px;
-    /*border: 1px dotted yellow; */
+    margin: 0px;
+    padding: 10px 80px;
+    /* border: 1px dotted red; */
 }
 
 /*  ************************
@@ -42,51 +43,10 @@ header {
     z-index: 2;
     background-color: white;
     width: 100%;
+    min-width: 350;
+    /* border: 1px dotted blue; */
 }
 
-.logo {
-    width: 270px; 
-    display: block;  
-    text-align: left;
-    /*border: 1px dashed yellow; */
-}
-.logo_btn {
-    width: 100%;
-    line-height: 60px;
-    font-size: 2.2rem;
-    font-weight: bold;
-    vertical-align: middle;   
-    display: inline-block; 
-    /* position: relative; */ /* ref position for main_menu */
-    /* border: 1px dashed pink; */
-}
-
-/*  ------------------------
-    NAV (dropdown menu)
-    ------------------------  */
-nav.main_menu {
-    display: none;
-    position: absolute;
-    width: 230px;
-    margin: 0px;
-    z-index: 1;
-    text-align: left; 
-    /* border: 1px dotted gray; */
-}
-
-nav.main_menu a {
-    display: block;
-    padding: 10px 0px;
-    font-size: 1.3rem;
-    
-    /* border: 1px dotted gray; */
-}
-
-  
-
-/*  ------------------------
-    Logo hovered
-    ------------------------  */
 #voile {
     display: none;
     margin: 0px;
@@ -98,12 +58,97 @@ nav.main_menu a {
     z-index: 0 ; 
 }
 
-.logo:hover nav.main_menu {
+.logo {
+    width: 270px; 
+    display: block;  
+    text-align: left;
+    /* border: 1px dashed red; */
+}
+.logo_btn {
+    width: 100%;
+    line-height: 60px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    vertical-align: middle;   
+    display: inline-block; 
+    /* position: relative; */ /* ref position for main_menu */
+    /* border: 1px dashed violet; */
+}
+
+/*  ------------------------
+    NAV (dropdown menu)
+    ------------------------  */
+#burger {
+    display: none;
+}
+
+.main_menu {
+    display: none;
+    position: absolute;
+    width: 230px;
+    margin: 0px;
+    z-index: 1;
+    text-align: left; 
+    /* border: 1px dotted gray; */
+
+    /*overflow: hidden;*/
+    float: left;
+}
+
+.main_menu a {
     display: block;
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    
+    /* border: 1px dotted gray; */
 }
-.logo:hover .logo_btn {
-    text-decoration: underline;
+.main_menu a:hover {
+    /*
+    background-color: rgb(90, 150, 255);
+    color: white;
+    */
 }
+
+/*  ------------------------
+    Responsive dropdown 
+    ------------------------  */
+    @media screen and (max-width: 600px) {
+    
+        #burger:checked ~ .logo .main_menu {
+            display: block;
+        }
+        #burger:checked ~ .logo .logo_btn {
+            text-decoration: underline;
+        }
+        #burger:checked ~ #voile {
+            display: block;
+        }
+    
+    }
+    
+    @media screen and (min-width: 601px) {
+        .toggle, .toggle::before, .toggle::after {
+            display: none;
+        }  
+
+        /*  ------------------------
+            Logo hovered
+            ------------------------  */
+        .logo:hover .main_menu {
+            display: block;
+        }
+        .logo:hover .logo_btn {
+            text-decoration: underline;
+        }
+        .logo:hover + #voile {
+            display: block;
+        }
+    } 
+
+
+    
+
+
 
 /*  ************************
     ------------------------
@@ -153,7 +198,6 @@ main section {
 main p {
     display: block;
     margin: 0px auto 2rem;
-    
 }
 
 /*  ************************
