@@ -41,10 +41,10 @@ header {
     display: block;
     position: fixed;
     z-index: 2;
+    /* background-color: rgba(250, 138, 80, 0.3); */
     background-color: white;
     width: 100%;
     min-width: 350;
-    /* border: 1px dotted blue; */
 }
 
 #voile {
@@ -113,31 +113,12 @@ header {
     
 }
 
-/*  ------------------------
-    Small screen: header 
-    ------------------------  */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px 40px;
-    }
-    .logo_btn {
-        line-height: 40px;
-        font-size: 1.9rem;
-        /* border: 1px dashed violet; */
-    }
-    .main_menu a {
-        display: block;
-        padding: 8px 0px;
-        font-size: 1.2rem;
-        
-        /* border: 1px dotted gray; */
-    }
-}
+
 
 /*  ------------------------
     Responsive dropdown 
     ------------------------  */
-@media screen and (max-width: 600px), @media screen and (max-height: 400px) {
+@media screen and (max-width: 600px) {
     
     #burger:checked ~ .logo .main_menu {
         display: block;
@@ -149,13 +130,12 @@ header {
         display: block;
         opacity: 0.9;
     }
-
 }
     
 @media screen and (min-width: 601px) {
     .toggle, .toggle::before, .toggle::after {
         display: none;
-    }  
+}  
 
     /*  ------------------------
         Logo hovered
@@ -172,9 +152,6 @@ header {
 } 
 
 
-    
-
-
 
 /*  ************************
     ------------------------
@@ -185,13 +162,14 @@ header {
 main::before {
     content: '';
     display: block;
-    height: 60px;
+    height: 70px;
     margin: 0px 0px 10px;
     /* border: 1px dotted violet; */
 }
 main {
     min-height: 95vh;
     line-height: 2em;
+    /* border: 1px solid yellow; */
 }
 
 h2 {
@@ -233,3 +211,29 @@ main p {
 footer {
     text-align: center; 
 }
+
+
+
+/*  ------------------------
+    Small screen: header 
+    ------------------------  */
+    @media screen and (max-width: 600px) {
+        header {
+            padding: 10px 40px;
+        }
+        main::before {
+            height: 50px;
+        }
+        .logo_btn {
+            line-height: 40px;
+            font-size: 1.9rem;
+            /* border: 1px dashed violet; */
+        }
+        .main_menu a {
+            display: block;
+            padding: 8px 0px;
+            font-size: 1.2rem;
+            
+            /* border: 1px dotted gray; */
+        }
+    }
