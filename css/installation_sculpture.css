@@ -16,6 +16,7 @@
     .sub_menu {
         /*border: 1px dotted gray;
         background: rgb(255, 215, 222);*/
+        padding: 40px;
     }
 }
 @media screen and (min-width: 769px) {
@@ -31,11 +32,19 @@
     }
 }
 
+
 .sub_menu p {
     padding: 0px;
     margin: 10px auto;
     /* border: thin dotted rgb(53, 160, 106); */
 }
+
+/*
+.sub_menu a:hover {
+    font-style: italic;
+}
+*/
+
 
 
 
