@@ -6,28 +6,25 @@
     ------------------------  */
 .sub_menu {
     padding: 20px 80px 20px 20px ;
-    
+    display: box;
     font-size: 1.2rem;
     line-height: 1.7rem;
     word-wrap: break-word;  
+    background: white; 
 }
 @media screen and (max-width: 768px) {
     .sub_menu {
-        display: box;
-        
-        border: 1px dotted gray;
-        background: rgb(255, 215, 222);
+        /*border: 1px dotted gray;
+        background: rgb(255, 215, 222);*/
     }
 }
 @media screen and (min-width: 769px) {
     .sub_menu {
-        display: box;
         position: fixed;
         width: 50%;
         top: 0px;
         left: 50%;
         z-index: 2;
-        background: white; 
 
         /*border: 1px dotted gray;*/
         /* 加上從上滑下來的漸進效果 */
