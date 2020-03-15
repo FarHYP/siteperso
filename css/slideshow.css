@@ -3,56 +3,101 @@
 /*  ------------------------
     Slide Show
     ------------------------  */
-main {
-    padding: 10px;
+
+:root {
+    --slideshow-box-h: 86vh;
+    --img-h: 0px;
+    --espace-vertical: 0px;
 }
-#img_slideshow, #img_slideshow img {
+
+main {
+    padding: 0px;
+}
+#img_slideshow {
+    margin: 0px;
+    padding-top: 0px;
+    width: 100%;
+    height: var(--slideshow-box-h);
+    /* background: rgba(187, 218, 103, 0.6); */
+    
+}
+#img_slideshow, #img_slideshow, .carousel-inner, .item, img {
     z-index: -10;
     /* border: 1px dotted green; */
 }
 .carousel-inner {
-    min-width: 400px;
-    /* border: 1px dotted gray; */
+    height: 100%;
+    /* border: 1px solid rgba(71, 83, 189, 0.7); */
 }
-
-@media screen and (orientation: portrait) {
-    @media (max-width: 600px) {
-        .carousel-inner > .item > img {
-            margin: 30px auto;
-            max-height: 48vh;
-            width: auto;
-            /*border: 1px dotted lightred; */
-        }
-    }
-    @media (min-width: 601px) {
-        .carousel-inner > .item > img {
-            margin: 30px auto;
-            max-height: 52vh;
-            width: auto;
-            /*border: 1px dotted lightgreen; */
-        }
-    }
+.carousel-inner > .item {
+    /* background: rgba(218, 168, 103, 0.6); */
+    text-align: center;
+}
+.carousel-inner > .item > img {
+    padding: 0px;
+    margin: 0px auto; 
     
 }
-@media screen and (orientation: landscape) {
+
+/* rules for landscape layout */
+@media (min-aspect-ratio: 8/7) {
     .carousel-inner > .item > img {
-        margin: 30px auto;
-        height: 73vh;
+        --img-h: 72vh;
+        height: var(--img-h);
         width: auto;
-        /* border: 1px dotted lightgreen; */
+    }
+    .carousel-inner {
+        /* border: 1px solid salmon; */
+    }
+    .carousel-inner > .item { 
+        margin: 7vh auto;
+
+        /*
+        --espace-vertical: calc(var(--slideshow-box-h) - var(--img-h)); 
+        --espace: calc(var(--espace-vertical)/2);
+        margin: var(--espace) auto;
+        */
+        /*  ex: while lanscape orientation ( #img_slideshow(86vh) - img.height(72vh) ) / 2 = 7vh */
     }
 }
 
-.carousel-inner > .item > img {
-    margin: 30px auto;
-    height: 73vh;
-    width: auto;
-    /* border: 1px dotted lightgreen; */
+/* rules for portrait layout */
+@media (max-aspect-ratio: 7/8) {
+    .carousel-inner > .item > img {
+        width: 80vw;
+        height: auto;
+        /* --img-h: 72vh; */
+    }
+    .carousel-inner {
+        /* border: 1px dashed violet; */
+    }
+    /* 垂直置中待改善!!! */
+    .carousel-inner > .item { 
+        margin: 30px auto;
+    }
 }
 
-/*
-.logo:hover + a > .carousel > .carousel-inner > .item > img {
-    filter: opacity(30%);
+/* rules for square-ish layout */
+@media (max-aspect-ratio: 8/7) and (min-aspect-ratio: 7/8) {
+    .carousel-inner > .item > img {
+        --img-h: 60vh;
+        height: var(--img-h);
+        width: auto;
+    }
+    .carousel-inner {
+        /* border: 1px dotted blue; */
+    }
+    .carousel-inner > .item { 
+        margin: 13vh auto;
+
+        /*
+        --espace-vertical: calc(var(--slideshow-box-h) - var(--img-h)); 
+        --espace: calc(var(--espace-vertical)/2);
+        margin: var(--espace) auto;
+        */
+        /*  ex: while lanscape orientation ( #img_slideshow(86vh) - img.height(60vh) ) / 2 = 13vh */
+    }
 }
 
-*/
+
+

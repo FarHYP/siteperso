@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/*  ------------------------
+    NAV:
+    Sub-Menu for projets
+    ------------------------  */
+.sub_menu {
+    padding: 20px 80px 20px 20px ;
+    
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    word-wrap: break-word;  
+}
+@media screen and (max-width: 768px) {
+    .sub_menu {
+        display: box;
+        
+        border: 1px dotted gray;
+        background: rgb(255, 215, 222);
+    }
+}
+@media screen and (min-width: 769px) {
+    .sub_menu {
+        display: box;
+        position: fixed;
+        width: 50%;
+        top: 0px;
+        left: 50%;
+        z-index: 2;
+        background: white; 
+
+        /*border: 1px dotted gray;*/
+        /* 加上從上滑下來的漸進效果 */
+    }
+}
+
+.sub_menu p {
+    padding: 0px;
+    margin: 10px auto;
+    /* border: thin dotted rgb(53, 160, 106); */
+}
+
+
+
+/*  ------------------------
+    Projet:
+    Installation/Sculpture
+    ------------------------  */
+
+main {
+    padding: 0px;
+}
+
+.projet_list, .projet {
+    box-sizing: border-box;
+}
+
+.projet_list {
+    /* border: 1px dotted gray; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projet {
+    display: box;
+    width: 50%;
+    padding: 0px;
+}
+@media screen and (max-width: 768px) {
+    .projet {
+        width: 100%;
+    }
+}
+
+.projet:nth-child(odd) {
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    align-self: center;
+    /* border: 1px dotted deeppink; */
+}
+.projet:nth-child(even) {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    align-self: bottom;
+    /* border: 1px dotted blue; */
+}
+.projet:nth-child(1) {
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+    align-self: center;
+    /* border: 1px dotted green; */
+}
+.projet:nth-child(2) {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    align-self: center;
+    /* border: 1px dotted green; */
+}
+.projet img{
+    display: table;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    /* border: 1px dotted yellow; */
+}
+.projet:nth-child(1) img{
+    width: 60%;
+}
+.projet:nth-child(5) img{
+    width: 70%;
+}
+.projet figcaption {
+    text-align: center;
+}
+
+/*
+.projet_list::after {
+    content: '';
+    display: block;
+    clear: both;
+
+    border: 1px dotted black;
+}*/
+
+
+
