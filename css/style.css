@@ -12,7 +12,7 @@ html {
 html, body {
     height: 100%;
 }
-body {
+body.index {
     background-image: url("../img/MG_8167.jpg");
     
     background-repeat: no-repeat;
@@ -20,7 +20,8 @@ body {
     background-position: center;
     background-size: cover;
     opacity: 0.5;
-
+}
+body {
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.6px;
