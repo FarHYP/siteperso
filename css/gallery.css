@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/*  ------------------------
+    NAV:
+    Sub-Menu for projets
+    ------------------------  */
+.sub_menu {
+    padding: 20px 80px 20px 20px ;
+    display: box;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    word-wrap: break-word;  
+    background: white; 
+}
+@media screen and (max-width: 768px) {
+    .sub_menu {
+        /*border: 1px dotted gray;
+        background: rgb(255, 215, 222);*/
+        padding: 40px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .sub_menu {
+        position: fixed;
+        width: 50%;
+        top: 0px;
+        left: 50%;
+        z-index: 2;
+
+        /*border: 1px dotted gray;*/
+        /* 加上從上滑下來的漸進效果 */
+    }
+}
+
+
+.sub_menu p {
+    padding: 0px;
+    margin: 10px auto;
+    /* border: thin dotted rgb(53, 160, 106); */
+}
+
+/*
+.sub_menu a:hover {
+    font-style: italic;
+}
+*/
+
+
+
+
+/*  ------------------------
+    Projet:
+    Installation/Sculpture
+    ------------------------  */
+
+main {
+    padding: 0px;
+}
+
+.projet_list, .projet {
+    box-sizing: border-box;
+}
+
+.projet_list {
+    /* border: 1px dotted gray; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projet {
+    display: box;
+    width: 50%;
+    padding: 0px;
+}
+@media screen and (max-width: 768px) {
+    .projet {
+        width: 100%;
+    }
+}
+
+.projet:nth-child(odd) {
+    padding-top: 5vh;
+    padding-bottom: 20vh;
+    align-self: center;
+    /* border: 1px dotted deeppink; */
+}
+.projet:nth-child(even) {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+    align-self: bottom;
+    /* border: 1px dotted blue; */
+}
+.projet.large:nth-child(odd) {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    align-self: center;
+    /* border: 1px dotted violet; */
+}
+.projet.large:nth-child(even) {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    align-self: bottom;
+    /* border: 1px dotted orange; */
+}
+
+
+.projet img{
+    display: table;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    /* border: 1px dotted yellow; */
+}
+.projet.long img{
+    width: 68%;
+}
+.projet.large img{
+    width: 78%;
+}
+.projet figcaption {
+    text-align: center;
+}
+
+/*
+.projet_list::after {
+    content: '';
+    display: block;
+    clear: both;
+
+    border: 1px dotted black;
+}*/
+
+
+
