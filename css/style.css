@@ -166,7 +166,7 @@ body.index .menu_list {
     /* border: 1px dotted blue; */
 }
 body.index #voile {
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 
@@ -203,7 +203,6 @@ body.index #voile {
     }
     #burger:checked ~ #voile {
         display: block;
-        opacity: 0.4;
     }
 }
 /* tiny screen */
@@ -244,7 +243,7 @@ body.index #voile {
         display: block;
     }
 } 
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
 
     body.index .menu_list {
         top: 110px;
@@ -252,7 +251,7 @@ body.index #voile {
         border: 1px dotted red;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     body.index nav.main_menu {
         margin-left: 5%;
