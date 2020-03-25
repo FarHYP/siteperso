@@ -5,69 +5,56 @@
     ------------------------  */
 .a_propos {
     margin: 30px auto 10px;
-    /*border: 1px dotted gray;  */
-}
-.intro {
-    float: left;
-    width: 60%;
-    /* padding: 60px 50px 60px 0px ;*/
-    padding-right: 50px;
-    margin-right: 8px;
-    /*border: 1px dashed black; */
+    box-sizing: border-box;
 }
 
 .autoportrait {
-    width: 480px;
+    width: 35%;
     display: block;    
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 40px;
     
-    float: left;
-    
-    /*
-    position: absolute;
-    right: 40px;
-    top: 0px;
-    z-index: 2;
-    */
-    /* border: 1px dashed blue; */
 }
+
 .autoportrait img {
-    /* max-width: 500px; */
-    width: 480px;
-    height: auto;
     margin: 0px auto;
-    /* border: 1px dotted red; */
+    width: 100%;
+    height: auto;
 }
-/* figure 跟 caption 之間的10px要處理 */
 figcaption {
     display: inline-block;
     vertical-align: middle;
-    /*width: 480px;*/
     line-height: 1.2em;
-    /* border: 1px dotted green; */
 }
 
-.clearfix::after {
+.a_propos::after {
     content: '';
     display: block;
     clear: both;
-    
-    /*z-index: -1;  */
 }
 
+@media screen and (max-width: 768px) {
+    .autoportrait {
+        width: 100%;
+    }
+    .autoportrait img {
+
+        display: table;
+        width: 70%;
+        border: 1px dotted red;
+    }
+    figcaption {
+        width: 70%;
+        margin: 0px 15%;
+    }
+}
 
 
 /*  ------------------------
     PARCOURS
     ------------------------  */
-.parcours {
-    /*display: block;*/
-    /*padding: 60px 0px;*/
-    /*border: 1px dotted lightseagreen; */
-}
 
-.parcours dl {
-    /*margin-bottom: 60px;*/
-}
 .parcours dd {
     margin-bottom: 2rem;
     /* border: 1px dotted violet; */
@@ -79,9 +66,5 @@ figcaption {
 
 .parcours li {
     list-style-type: none;
-    /*text-indent: -0.5em;*/
     margin-top: 1rem;
-    
-
-    /* border: 1px dotted yellow; */
 }

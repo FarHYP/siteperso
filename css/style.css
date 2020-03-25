@@ -44,13 +44,22 @@ body.index a:link, a:visited, a:active {
 }
 
 
-header, main, footer {
+header, footer {
     margin: 0;
     padding: 10px 80px;
     /* border: 1px dotted red; */
 }
+main {
+    margin: 0;
+    padding: 0px 80px;
+}
+
+header{
+    background-color: white;
+}
 body.index header{
     padding: 10px 25px;
+    background-color: transparent;
     /* border: 1px dotted red; */
 }
 
@@ -59,6 +68,8 @@ img {
     max-width: 100%;
     height:auto;
 }
+
+
 
 /*  ************************
     ------------------------
@@ -161,7 +172,7 @@ body.index .menu_list {
     
     background-color: #fff;
     /* 試試看voile 設個顏色*/
-    opacity: 0.8;
+    opacity: 0.9;
     
     /* border: 1px dotted blue; */
 }
@@ -312,13 +323,13 @@ main::before {
     content: '';
     display: block;
     height: 70px;
-    margin: 0px 0px 0px 10px;
+    margin: 0px;
     /* border: 1px dotted violet; */
 }
 main {
+    padding-bottom: 150px;
     min-height: 95vh;
     line-height: 2em;
-    /* border: 1px solid yellow; */
 }
 
 h2 {
@@ -364,7 +375,6 @@ main strong {
     ************************  */
 footer {
     text-align: center; 
-    padding-top: 150px;
 }
 
 
@@ -376,8 +386,12 @@ footer {
     header {
         padding: 10px 40px;
     }
+    main {
+        padding: 0px 40px;
+    }
+
     main::before {
-        height: 40px;
+        height: 50px;
     }
 
     body.index nav.main_menu {
@@ -387,7 +401,6 @@ footer {
     .logo {
         line-height: 30px;
         font-size: 1.8rem;
-        border: 1px dashed red; 
     }
     .menu_list {
         top: 60px;
@@ -401,11 +414,5 @@ footer {
         font-size: 1.2rem;
     }
 
-    /*
-    @media screen and (max-width: 768px) and (orientation: landscape) {
-        .menu_list {
-            top: 60px;
-            border: 1px dotted blue; 
-        }
-  }*/
+
 }

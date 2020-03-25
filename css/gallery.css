@@ -22,12 +22,17 @@
 @media screen and (min-width: 769px) {
     .sub_menu {
         position: fixed;
-        width: 50%;
+        width: 30%;
+        height: 95vh;
         top: 0px;
-        left: 50%;
+        left: 70%;
+        padding-top: 100px;
         z-index: 2;
 
-        /*border: 1px dotted gray;*/
+        /* background: rgb(213, 213, 213); */
+        /* background: linear-gradient(rgb(186, 186, 186),rgb(255, 255, 255)); */
+
+        /* border: 1px dotted gray; */
         /* 加上從上滑下來的漸進效果 */
     }
 }
@@ -49,12 +54,11 @@
 
 
 /*  ------------------------
-    Projet:
-    Installation/Sculpture
+    Projet Gallery
     ------------------------  */
 
 main {
-    padding: 0px;
+    /* padding: 0px; */
 }
 
 .projet_list, .projet {
@@ -63,57 +67,28 @@ main {
 
 .projet_list {
     /* border: 1px dotted gray; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 68%;
+    display: block;
 }
 
 .projet {
-    display: box;
-    width: 50%;
+    /* display: box; */
+    width: 100%;
     padding: 0px;
-}
-@media screen and (max-width: 768px) {
-    .projet {
-        width: 100%;
-    }
-}
-
-.projet:nth-child(odd) {
-    padding-top: 5vh;
-    padding-bottom: 20vh;
-    align-self: center;
-    /* border: 1px dotted deeppink; */
-}
-.projet:nth-child(even) {
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-    align-self: bottom;
-    /* border: 1px dotted blue; */
-}
-.projet.large:nth-child(odd) {
     padding-top: 10vh;
-    padding-bottom: 20vh;
-    align-self: center;
-    /* border: 1px dotted violet; */
-}
-.projet.large:nth-child(even) {
-    padding-top: 20vh;
-    padding-bottom: 10vh;
-    align-self: bottom;
-    /* border: 1px dotted orange; */
+    padding-bottom: 12vh;
 }
 
 
 .projet img{
     display: table;
     margin: auto;
-    width: 75%;
+    width: 70%;
     height: auto;
-    /* border: 1px dotted yellow; */
 }
 .projet.long img{
-    width: 68%;
+    height: 75vh;
+    width: auto;
 }
 .projet.large img{
     width: 78%;
@@ -121,15 +96,5 @@ main {
 .projet figcaption {
     text-align: center;
 }
-
-/*
-.projet_list::after {
-    content: '';
-    display: block;
-    clear: both;
-
-    border: 1px dotted black;
-}*/
-
 
 
