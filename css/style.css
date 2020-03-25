@@ -189,12 +189,11 @@ body.index #voile {
         color: rgb(40, 40, 40);  
     } */
     body.index #burger:checked ~ .main_menu .menu_list {
-        top: 80px;
+        /* top: 80px; */
         left: 295px; 
     }
     body.index #burger:checked ~ .main_menu .menu_list a {
         color: rgb(90, 90, 90);
-        padding: 3px 0px;
     }
     body.index #burger:checked ~ .main_menu .menu_list a:hover {
         color: rgb(30, 30, 30);
@@ -210,14 +209,14 @@ body.index #voile {
 /* tiny screen */
 @media screen and (min-width: 376px) and (max-width: 550px) {
     body.index #burger:checked ~ .main_menu .menu_list {
-        top: 90px;
+        /* top: 90px; */
         left: 200px; 
     }
 }
 @media screen and (max-width: 375px) {
     body.index #burger:checked ~ .main_menu .menu_list {
-        top: 90px;
-        left: 130px; 
+        /* top: 90px; */
+        left: 120px; 
     }
 }
 
@@ -382,15 +381,18 @@ footer {
         height: 50px;
     }
     .logo {
-        line-height: 40px;
-        font-size: 1.9rem;
-        /* border: 1px dashed violet; */
+        line-height: 30px;
+        font-size: 1.8rem;
+         border: 1px dashed violet; 
+    }
+    .menu_list {
+        top: 80px;
     }
     .menu_list a {
         display: block;
-        padding: 8px 0px;
+        padding: 3px 0px;
         font-size: 1.2rem;
         
-        /* border: 1px dotted gray; */
+        border: 1px dotted gray; 
     }
 }
