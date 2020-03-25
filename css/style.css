@@ -208,10 +208,16 @@ body.index #voile {
     }
 }
 /* tiny screen */
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 321px) and (max-width: 550px) {
     body.index #burger:checked ~ .main_menu .menu_list {
         top: 90px;
         left: 200px; 
+    }
+}
+@media screen and (max-width: 320px) {
+    body.index #burger:checked ~ .main_menu .menu_list {
+        top: 90px;
+        left: 150px; 
     }
 }
 
