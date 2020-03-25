@@ -27,7 +27,7 @@ body {
     font-size: 1.3em;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.6px;
-    color: #666;
+    color: rgb(126, 126, 126);
 }
 body.index {
     /* opacity: 0.7; */
@@ -35,13 +35,15 @@ body.index {
 }
 
 a:link, a:visited, a:active {
-    color:#666;
+    color:rgb(126, 126, 126); 
     text-decoration: none;
     letter-spacing: 2px;
 }
-body.index a:link, a:visited, a:active {
-    color: rgb(126, 126, 126);
+/*
+body.index a:link, body.index a:visited, body.index a:active {
+    color: rgb(126, 126, 126); 
 }
+*/
 
 
 header, footer {
@@ -151,7 +153,7 @@ body.index .menu_list {
     /* border: 1px dotted red; */
 }
 .menu_list a:hover {
-    /* background-color: rgb(90, 150, 255); */
+    /* background-color: rgb(90, 150, 255); */ 
     color: rgb(60, 60, 60);
 }
     
