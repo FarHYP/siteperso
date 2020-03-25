@@ -216,7 +216,7 @@ body.index #voile {
 @media screen and (max-width: 420px) {
     body.index #burger:checked ~ .main_menu .menu_list {
         /* top: 90px; */
-        left: 120px; 
+        left: 110px; 
     }
 }
 
