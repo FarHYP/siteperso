@@ -352,6 +352,13 @@ h3 {
     text-decoration: underline;
 }
 
+h4 {
+    line-height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 220;
+    /* border: 1px dotted violet; */
+}
+
 main section {
     margin-bottom: 20px;
     padding-top: 60px;

@@ -12,7 +12,13 @@
     word-wrap: break-word;  
     background: white; 
 }
+.sub_menu_title {
+    letter-spacing: 2px;
+}
 @media screen and (max-width: 768px) {
+    main {
+        padding: 0px;
+    }
     .sub_menu {
         /*border: 1px dotted gray;
         background: rgb(255, 215, 222);*/
@@ -26,14 +32,15 @@
         height: 95vh;
         top: 0px;
         left: 70%;
-        padding-top: 100px;
+        padding-top: 450px;
         z-index: 2;
 
-        /* background: rgb(213, 213, 213); */
+        /* background: rgba(213, 213, 213, 0.4); */
         /* background: linear-gradient(rgb(186, 186, 186),rgb(255, 255, 255)); */
 
         /* border: 1px dotted gray; */
         /* 加上從上滑下來的漸進效果 */
+
     }
 }
 
@@ -67,7 +74,7 @@ main {
 
 .projet_list {
     /* border: 1px dotted gray; */
-    width: 68%;
+    width: 70%;
     display: block;
 }
 
@@ -76,25 +83,45 @@ main {
     width: 100%;
     padding: 0px;
     padding-top: 10vh;
-    padding-bottom: 12vh;
+    padding-bottom: 15vh;
+    /* border: thin dotted rgb(53, 160, 106); */
 }
+@media screen and (max-width: 768px) {
+    .projet_list {
+        width: 100%;
+    }
+    .projet {
+        padding-top: 8vh;
+        padding-bottom: 10vh;
+    }
+}
+
 
 
 .projet img{
     display: table;
     margin: auto;
-    width: 70%;
+    width: 78%;
     height: auto;
+    border: 0;
 }
 .projet.long img{
-    height: 75vh;
-    width: auto;
+    width: 53%;
 }
+@media screen and (max-width: 768px) {
+    .projet.long img{
+        height: 56vh;
+        width: auto;
+    }
+}
+/*
 .projet.large img{
     width: 78%;
 }
+*/
+
 .projet figcaption {
     text-align: center;
+    
 }
-
 
