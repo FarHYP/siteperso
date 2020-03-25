@@ -215,7 +215,7 @@ body.index #voile {
 @media screen and (max-width: 420px) {
     body.index #burger:checked ~ .main_menu .menu_list {
         /* top: 90px; */
-        left: 110px; 
+        left: 120px; 
     }
 }
 
@@ -385,7 +385,11 @@ footer {
          border: 1px dashed violet; 
     }
     .menu_list {
-        top: 80px;
+        top: 75px;
+    }
+    .menu_list li {
+        padding: 2px 0px;
+        border: 1px dotted green; 
     }
     .menu_list a {
         display: block;
