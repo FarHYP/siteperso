@@ -377,7 +377,7 @@ footer {
         padding: 10px 40px;
     }
     main::before {
-        height: 50px;
+        height: 40px;
     }
     .logo {
         line-height: 30px;
@@ -385,7 +385,7 @@ footer {
          border: 1px dashed violet; 
     }
     .menu_list {
-        top: 75px;
+        top: 70px;
     }
     .menu_list li {
         padding: 2px 0px;
