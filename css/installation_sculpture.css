@@ -91,30 +91,16 @@ main {
     align-self: bottom;
     /* border: 1px dotted blue; */
 }
-.projet:nth-child(1) {
-    padding-top: 11vh;
-    padding-bottom: 11vh;
-    align-self: center;
-    /* border: 1px dotted green; */
-}
-.projet:nth-child(2) {
-    padding-top: 20vh;
-    padding-bottom: 5vh;
-    align-self: center;
-    /* border: 1px dotted green; */
-}
+
 .projet img{
     display: table;
     margin: auto;
-    width: 80%;
+    width: 75%;
     height: auto;
     /* border: 1px dotted yellow; */
 }
-.projet:nth-child(1) img{
-    width: 60%;
-}
-.projet:nth-child(5) img{
-    width: 70%;
+.projet.long img{
+    width: 68%;
 }
 .projet figcaption {
     text-align: center;

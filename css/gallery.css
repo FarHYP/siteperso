@@ -108,6 +108,12 @@ main {
 .projet.long img{
     width: 53%;
 }
+.projet.carre img{
+    width: 65%;
+}
+.projet.pluslong img{
+    width: 45%;
+}
 @media screen and (max-width: 768px) {
     .projet.long img{
         height: 56vh;

@@ -315,6 +315,46 @@ nav a:hover::before {
 
 
 
+
+/*  ------------------------
+    Small screen: header 
+    ------------------------  */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 40px;
+    }
+    main {
+        padding: 0px 40px;
+    }
+
+    main::before {
+        height: 50px;
+    }
+
+    body.index nav.main_menu {
+        margin-top: 5px;   
+        /* border: 1px dotted violet; */
+    }
+    .logo {
+        line-height: 30px;
+        font-size: 1.8rem;
+    }
+    .menu_list {
+        top: 60px;
+    }
+    .menu_list li {
+        padding: 2px 0px;
+    }
+    .menu_list a {
+        display: block;
+        padding: 3px 0px;
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
 /*  ************************
     ------------------------
     MAIN
@@ -329,7 +369,7 @@ main::before {
     /* border: 1px dotted violet; */
 }
 main {
-    padding-bottom: 150px;
+    padding-bottom: 180px;
     min-height: 95vh;
     line-height: 2em;
 }
@@ -388,40 +428,3 @@ footer {
 
 
 
-/*  ------------------------
-    Small screen: header 
-    ------------------------  */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 10px 40px;
-    }
-    main {
-        padding: 0px 40px;
-    }
-
-    main::before {
-        height: 50px;
-    }
-
-    body.index nav.main_menu {
-        margin-top: 5px;   
-        /* border: 1px dotted violet; */
-    }
-    .logo {
-        line-height: 30px;
-        font-size: 1.8rem;
-    }
-    .menu_list {
-        top: 60px;
-    }
-    .menu_list li {
-        padding: 2px 0px;
-    }
-    .menu_list a {
-        display: block;
-        padding: 3px 0px;
-        font-size: 1.2rem;
-    }
-
-
-}
