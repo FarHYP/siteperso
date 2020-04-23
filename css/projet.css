@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*  ------------------------
+    Project Slideshow
+    ------------------------  */
+
+.display_container{
+    margin: 40px auto 200px;
+    /* max-width: width 980px; */
+    width: 90%;
+    /* position: relative; */
+    /* border: dotted thin gray; */
+}
+.slide {
+    width: 90%;
+    margin: 0px auto;
+    height: 81vh;
+    /* border: dotted thin pink; */
+}
+.slide img {
+    display: table;
+    margin: auto;
+    height: 94%;
+    width: auto;
+    border: 0;
+    /* border: dotted thin red; */
+}
+.slide figcaption {
+    text-align: center;
+    /* border: dotted thin red; */
+}
+
+.slide_ctrl { 
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 0.9em; 
+    color: rgb(188, 188, 188);
+    line-height: 1em;
+    /* border: thin solid pink; */
+}
+.slides_btn{
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    background-color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0px 20px;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+/*
+.display_left{
+    position: absolute; 
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+.display_right{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+}
+*/
+
+
+
+
+/*  ------------------------
+    Sub Menu
+    ------------------------  */
+.sub_menu {
+    width: 50%;
+    position: fixed;
+    right: 80px;
+    top: 20px;
+
+    margin-top: -5px;
+    line-height: 1.5em;
+    text-align: right;
+
+
+    /* border: thin solid pink; */
+}
+.sub_menu_title {
+    font-size: 0.9em;
+}
+.titre {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+/*  ------------------------
+    Project Info
+    ------------------------  */
+
+.projet_info {
+    /*
+    width: 50%;
+    margin: 0px auto;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+*/
+    /* word-wrap:break-word; */
+    /* border: thin solid pink; */
+}
+
+/*  ------------------------
+    Retour
+    ------------------------  */
+
+.retour {
+    padding-top: 200px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+main {
+    padding-bottom: 60px;
+}

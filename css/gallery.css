@@ -11,10 +11,9 @@
     line-height: 1.7rem;
     word-wrap: break-word;  
     background: white; 
+    letter-spacing: 1px;
 }
-.sub_menu_title {
-    letter-spacing: 2px;
-}
+
 @media screen and (max-width: 768px) {
     main {
         padding: 0px;
@@ -33,7 +32,6 @@
         top: 0px;
         left: 70%;
         padding-top: 450px;
-        z-index: 2;
 
         /* background: rgba(213, 213, 213, 0.4); */
         /* background: linear-gradient(rgb(186, 186, 186),rgb(255, 255, 255)); */
@@ -82,8 +80,8 @@ main {
     /* display: box; */
     width: 100%;
     padding: 0px;
-    padding-top: 10vh;
-    padding-bottom: 15vh;
+    padding-top: 8vh;
+    padding-bottom: 22vh;
     /* border: thin dotted rgb(53, 160, 106); */
 }
 @media screen and (max-width: 768px) {
