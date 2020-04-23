@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Enable RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- <meta name="description" content=""> -->
+        <meta name="keywords" content="Artiste, Yi-Ping Huang, 黃伊萍"> 
+        <title>Yi-Ping Huang / Artiste・Poète</title>
+
+        <!-- Import jQuery and Bootstrap JS library and Bootstrap CSS for slide show -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <!-- Import font-awesome for responsive dropdown menu -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--
+        <script type="text/javascript" src="js/voile.js"></script>
+        -->
+        
+        <link rel="stylesheet" href="../css/reset.css" media="all">
+        <link rel="stylesheet" href="../css/style.css" media="all">
+        <link rel="stylesheet" href="../css/projet.css" media="all">
+
+    </head>
+
+    <body>
+        <header id="header">
+            <input type="checkbox" id="burger">
+            <label for="burger" class="toggle"><!-- &#9776; --></label>
+               
+            <nav class="main_menu">           
+                <h1 class="logo">
+                    <a href="../index.html" >Yi-Ping Huang</a>
+                    <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
+                </h1> 
+                <ul class="menu_list" id="topnav">
+                     <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+                    <li><a href="../immersion_perf.html">Immersion&thinsp;/&thinsp;Performance</a></li>
+                    <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
+                    <li><a href="../installation_sculpture.html">Installation&thinsp;/&thinsp;Sculpture </a></li>
+                    <li><a href="../estampe_edition.html">Estampe&thinsp;/&thinsp;Édition</a></li>
+                    <li><a href="../photographie.html">Photographie</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="#">Actualité</a></li>
+                    <li><a href="#">Exposition</a></li>
+                    <li><a href="../a_propos.html">À propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav> 
+            <div id="voile"></div>
+        </header>
+        <main>
+            <!-- --------------------網頁變動內容 Main 開始----------------- -->
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <h2 class="hidden">Immersion&thinsp;/&thinsp;Performance</h2>
+            <nav class="sub_menu">
+                <span class="sub_menu_title">Immersion&thinsp;/&thinsp;Performance ____ </span> <br>
+                <I class="titre"> En s’attardant... </I>     
+            </nav>
+
+            <div class="display_container">  
+                <figure class="slide">
+                    <img src="../img/projet/en-s-attardant/MG_8057.jpg" alt="En s’attardant... image#1" onclick="plusDivs(1)">
+                    <figcaption>Vue d’intallation, DNSEP Art, EESAB Rennes, 2019</figcaption>
+                </figure>
+                <figure  class="slide">
+                    <img src="../img/projet/en-s-attardant/MG_3186.jpg" alt="En s’attardant... image#2" onclick="plusDivs(1)">
+                    <figcaption>Vue d’intallation, DNSEP Art, EESAB Rennes, 2019</figcaption>
+                </figure>    
+                <figure class="slide">
+                        <img src="../img/projet/en-s-attardant/MG_3188.jpg" alt="En s’attardant... image#3" onclick="plusDivs(1)">
+                        <figcaption>Vue d’intallation, DNSEP Art, EESAB Rennes, 2019</figcaption>
+                </figure>
+                <figure class="slide">
+                        <img src="../img/projet/en-s-attardant/MG_8065.jpg" alt="En s’attardant... image#4" onclick="plusDivs(1)">
+                        <figcaption>Vue d’intallation, DNSEP Art, EESAB Rennes, 2019</figcaption>
+                </figure>
+
+                <div class="slide_ctrl">
+                    <button class="slides_btn display_left" onclick="plusDivs(-1)">&lt;<!--▷ &#10094;--></button>
+                    <span id="s_index">1</span>&thinsp;&thinsp;/&thinsp;&thinsp;<span id="s_total"></span>
+                    <button class="slides_btn display_right" onclick="plusDivs(1)">&gt;<!--▷ &#10095;--></button>
+                </div>               
+            </div>
+            
+            <article class="projet_info">     
+                <h4><I class="titre"> En s’attardant... </I></h4> 
+                passage sonore, intervention sonore au travers de l’espace, texte, lecture enregistrée, 2019<br>
+ 
+                <section class="illustration">    
+                    <p>
+                        L’ensemble de l’espace, le passage et l'installation sonores font l’entièreté de la pièce.<br>
+                        Il s’agit d’un passage qui nous fait nous attarder et capture notre attention pendant le passage, le déplacement. <br>
+                        Les textes écrits dont la lecture est enregistrée, sont des pensée lues, des réponses à une conversation déjà finie, 
+                        dont l’interlocuteur est déjà parti. <br>
+                    </p>
+                </section> 
+            </article>
+            <div class="retour">
+                <a href="../immersion_perf.html">Retour ▲</a>
+            </div>
+            
+           
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <!-- -------------------網頁變動內容 Main 結束------------------ -->
+        </main>
+            
+           
+        <!-- ----------------------版型 Footer 開始--------------------- -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- !!! foter 在index.html不導入，剩餘網頁頁面都須導入footer版型 !!! -->
+        <footer>&copy; 2020 Tous droits réservés</footer>
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- ----------------------版型 Footer 結束--------------------- -->
+        
+
+
+    </body>
+    
+
+</html>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    var total = document.getElementById('s_total');
+    total.textContent = document.getElementsByClassName("slide").length;
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+        document.getElementById("s_index").textContent=slideIndex;
+        
+    }
+    
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+    }
+    </script>

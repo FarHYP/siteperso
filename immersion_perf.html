@@ -17,13 +17,14 @@
         <!-- Import font-awesome for responsive dropdown menu -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--
-        <script type="text/javascript" src="js/voile.js"></script>
-        -->
+<!--
+        <script type="text/javascript" src="js/anchor.js"></script>
+-->
         
         <link rel="stylesheet" href="css/reset.css" media="all">
         <link rel="stylesheet" href="css/style.css" media="all">
         <link rel="stylesheet" href="css/gallery.css" media="all">
+        <link rel="stylesheet" href="css/test_mouse.css" media="all">
     </head>
 
     <body>
@@ -64,32 +65,32 @@
                 </p>
                 -->
                 <p>
-                    <a href="#"><I>En s’attardant...</I></a> &nbsp;—&nbsp;
-                    <a href="#"><I>Un moment serein donné</I></a> &nbsp;—&nbsp;
-                    <a href="#"><I>Il se dévoile par l’intermédiaire d’un déplacement</I></a> &nbsp;—&nbsp;
-                    <a href="#"><I>33 en flottant</I></a> 
+                    <a href="projet/en-s-attardant.html" onmouseenter="scrollToAnchor(projet_1);" ><I>En s’attardant...</I></a> &nbsp;—&nbsp;
+                    <a href="#" onmouseenter="scrollToAnchor(projet_2);" ><I>Un moment serein donné</I></a> &nbsp;—&nbsp;
+                    <a href="#" onmouseenter="scrollToAnchor(projet_3)"><I>Il se dévoile par l’intermédiaire d’un déplacement</I></a> &nbsp;—&nbsp;
+                    <a href="#" onmouseenter="scrollToAnchor(projet_4)"><I>33 en flottant</I></a> 
                 </p>
             </nav>
             <div class="projet_list">  
-                <figure class="projet large">
-                    <a href="#">
+                <figure class="projet large" id="projet_1">
+                    <a href="projet/en-s-attardant.html" >
                         <img src="img/projet/en-s-attardant/MG_8057.jpg" alt="En s’attardant...">
                         <figcaption>En s’attardant...</figcaption>
                     </a>
                 </figure>
-                <figure  class="projet">
+                <figure  class="projet" id="projet_2">
                     <a href="#">
                         <img src="img/projet/un-moment-serein-donne/MG_8154.jpg" alt="Un moment serein donné">
                         <figcaption>Un moment serein donné</figcaption>
                     </a>
                 </figure>    
-                <figure class="projet long">
+                <figure class="projet long" id="projet_3">
                     <a href="#">
                         <img src="img/projet/il-se-devoile/MG_3159.jpg" alt="Il se dévoile par l’intermédiaire d’un déplacement">
                         <figcaption>Il se dévoile par l’intermédiaire d’un déplacement</figcaption>
                     </a>
                 </figure>
-                <figure class="projet long">
+                <figure class="projet long" id="projet_4">
                     <a href="#">
                         <img src="img/projet/33-en-flotant/MG_3266.jpg" alt="33 en flottant">
                         <figcaption>33 en flottant</figcaption>
@@ -107,7 +108,7 @@
             <!-- -------------------網頁變動內容 Main 結束------------------ -->
         </main>
             
-           
+      
         <!-- ----------------------版型 Footer 開始--------------------- -->
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
         <!-- !!! foter 在index.html不導入，剩餘網頁頁面都須導入footer版型 !!! -->
@@ -118,7 +119,22 @@
 
 
     </body>
-    
-
 </html>
+
+<script> 
+
+
+var anchorId = "projet_1";
+
+function scrollToAnchor(anchorId){   
+   $("html, body").animate({
+        scrollTop: $(anchorId).offset().top-80 }, {duration: 500,easing: "swing"});
+    return false;
+}
+
+
+
+</script>
+
+
 
