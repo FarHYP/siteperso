@@ -8,19 +8,12 @@
         <!-- <meta name="description" content=""> -->
         <meta name="keywords" content="Artiste, Yi-Ping Huang, 黃伊萍"> 
         <title>Yi-Ping Huang / Artiste・Poète</title>
-
-        <!-- Import jQuery and Bootstrap JS library and Bootstrap CSS for slide show -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        
+   
         <!-- Import font-awesome for responsive dropdown menu -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
         <!--
-        <script type="text/javascript" src="js/voile.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         -->
-        
+          
         <link rel="stylesheet" href="../css/reset.css" media="all">
         <link rel="stylesheet" href="../css/style.css" media="all">
         <link rel="stylesheet" href="../css/projet.css" media="all">
@@ -86,11 +79,13 @@
                     <button class="slides_btn display_right" onclick="plusDivs(1)">&gt;<!--▷ &#10095;--></button>
                 </div>               
             </div>
+           
             
             <article class="projet_info">     
-                <h4><I class="titre"> En s’attardant... </I></h4> 
-                <span class="legend">
-                    passage sonore, intervention sonore au travers de l’espace, texte, lecture enregistrée, 2019<br>
+                <h4><I class="titre t_bleu"> En s’attardant... </I></h4> 
+                <span class="legend t_bleu">
+                    Passage sonore, 2019<br>
+                    Intervention sonore au travers de l’espace, texte, lecture enregistrée<br> 
                 </span>
                 <section class="illustration">    
                     <p>
@@ -99,6 +94,36 @@
                         Les textes écrits dont la lecture est enregistrée, sont des pensée lues, des réponses à une conversation déjà finie, 
                         dont l’interlocuteur est déjà parti. <br>
                     </p>
+                </section>
+                <section>
+                    <p>
+                        <I>Il faut parler</I><br>
+                        <span class="legend">
+                            Texte écrit et lecture enregistrée pour l’installation sonore de la pièce "En s’attardant...", réalisé en 2019
+                        </span>
+                        <div>
+                            <audio controls>
+                                <source src="../lecture/il_faut_parler_STE041.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <I>Salle noire</I><br>
+                        <span class="legend">
+                            Texte écrit et lecture enregistrée pour l’installation sonore de la pièce "En s’attardant...", réalisé en 2019
+                        </span>
+                        <div>
+                            <audio controls>
+                                <source src="../lecture/salle_noire_STE038.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </p>
+
+
                 </section> 
             </article>
             <div class="retour">
@@ -117,34 +142,9 @@
         <footer>&copy; 2020 Tous droits réservés</footer>
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
         <!-- ----------------------版型 Footer 結束--------------------- -->
-        
-
-
     </body>
-    
-
 </html>
 
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-    var total = document.getElementById('s_total');
-    total.textContent = document.getElementsByClassName("slide").length;
 
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-        document.getElementById("s_index").textContent=slideIndex;
-        
-    }
-    
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("slide");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-    }
-    </script>
+<script type="text/javascript" src="../js/slide.js"></script>  
+       
