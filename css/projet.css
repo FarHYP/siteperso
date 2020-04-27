@@ -23,12 +23,13 @@
     border: 0;
     /* border: dotted thin red; */
 }
-.slide figcaption {
-    width: 65%;
-    margin: 0px auto;
-    padding: 5px 0px 5px; 
-    line-height: 1.2em; 
-    /* border: dotted thin blue; */
+@media screen and (min-width: 769px) {
+    .slide figcaption {
+        width: 65%;
+        margin: 0px auto;
+        padding: 5px 0px 5px; 
+        line-height: 1.2em; 
+        border: dotted thin blue; 
 }
 
 @media screen and (max-width: 768px) {
@@ -39,6 +40,7 @@
         width: 80%;
         margin: 0px auto;
         text-align: left; 
+        border: dotted thin yellow; 
     }
 }
 @media screen and (orientation: portrait) and (max-width: 768px) {
