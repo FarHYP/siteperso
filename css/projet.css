@@ -45,14 +45,14 @@
     .slide img {
         height: 36vh;
         width: auto;       
-        border: dotted thin blue; 
+        /* border: dotted thin blue; */
     }
 }
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .slide img {
         width: 80%;
         height: auto;
-        border: dotted thin blue; 
+        /* border: dotted thin blue; */
     }
 }
 
