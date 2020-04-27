@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Enable RWD -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- <meta name="description" content=""> -->
+        <meta name="keywords" content="Artiste, Yi-Ping Huang, 黃伊萍"> 
+        <title>Yi-Ping Huang / Artiste・Poète</title>
+
+    
+        <!-- Import font-awesome for responsive dropdown menu -->
+        <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
+            
+        <link rel="stylesheet" href="../css/reset.css" media="all">
+        <link rel="stylesheet" href="../css/style.css" media="all">
+        <link rel="stylesheet" href="../css/projet.css" media="all">
+
+    </head>
+
+    <body>
+        <header id="header">
+            <input type="checkbox" id="burger">
+            <label for="burger" class="toggle"><!-- &#9776; --></label>
+               
+            <nav class="main_menu">           
+                <h1 class="logo">
+                    <a href="../index.html" >Yi-Ping Huang</a>
+                    <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
+                </h1> 
+                <ul class="menu_list" id="topnav">
+                     <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+                    <li><a href="../immersion_perf.html">Immersion&thinsp;/&thinsp;Performance</a></li>
+                    <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
+                    <li><a href="../installation_sculpture.html">Installation&thinsp;/&thinsp;Sculpture </a></li>
+                    <li><a href="../estampe_edition.html">Estampe&thinsp;/&thinsp;Édition</a></li>
+                    <li><a href="../photographie.html">Photographie</a></li>
+                    <li>&nbsp;</li>
+                    <li><a href="#">Actualité</a></li>
+                    <li><a href="#">Exposition</a></li>
+                    <li><a href="../a_propos.html">À propos</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav> 
+            <div id="voile"></div>
+        </header>
+        <main>
+            <!-- --------------------網頁變動內容 Main 開始----------------- -->
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <h2 class="hidden">Installation&thinsp;/&thinsp;Sculpture</h2>
+            <nav class="sub_menu">
+                <span class="sub_menu_title">Installation&thinsp;/&thinsp;Sculpture ____ </span> <br>
+                <I class="titre"> Elle se tourne, elle me voit, et puis, elle se fond dans la brume </I>     
+            </nav>
+
+            <div class="display_container">  
+                <figure  class="slide">
+                    <img src="../img/projet/elle-se-fond-dans-la-brume/MG_5357.jpg" alt="Elle se tourne, elle me voit, et puis, elle se fond dans la brume image#1" onclick="plusDivs(1)">
+                    <figcaption>
+                        Vue d'accrochage
+                    </figcaption>
+                </figure> 
+                
+
+
+                <div class="slide_ctrl">
+                    <button class="slides_btn display_left" onclick="plusDivs(-1)">&lt;<!--▷ &#10094;--></button>
+                    <span id="s_index">1</span>&thinsp;&thinsp;/&thinsp;&thinsp;<span id="s_total"></span>
+                    <button class="slides_btn display_right" onclick="plusDivs(1)">&gt;<!--▷ &#10095;--></button>
+                </div>               
+            </div>
+            
+            <article class="projet_info">     
+                <h4><I class="titre t_bleu"> Elle se tourne, elle me voit, et puis, elle se fond dans la brume </I></h4> 
+                <span class="legend t_bleu">
+                    Installation au mur, 2017<br>
+                    Vivak sérigraphié, colle, film plastique <br>
+                </span>
+                <section class="illustration">    
+                    <p>
+                        Un travail cherche à faire déplacer le regard.
+                    </p>
+                    <p>
+                        Il est d’un côté attiré par la relation pièce/mur. 
+                        Le mur paraît partie intégrante de la pièce mais agit aussi comme un portail d’où sort la pièce, 
+                        ou plutôt où elle se fond. Le mur se transforme en une brume épaisse illusoire. 
+                    </p>
+                    <p>
+                        De l’autre, notre attention alterne entre, un espace virtuel, généré par la transparence et l’ombre du film blanc. 
+                        Il nous intrigue, nous invite à contempler et nous absorbe. <br>
+                    </p>
+                </section> 
+            </article>
+            <div class="retour">
+                <a href="../installation_sculpture.html">Retour ▲</a>
+            </div>
+            
+           
+            <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+            <!-- -------------------網頁變動內容 Main 結束------------------ -->
+        </main>
+            
+           
+        <!-- ----------------------版型 Footer 開始--------------------- -->
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- !!! foter 在index.html不導入，剩餘網頁頁面都須導入footer版型 !!! -->
+        <footer>&copy; 2020 Tous droits réservés</footer>
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- ----------------------版型 Footer 結束--------------------- -->
+        
+    </body>
+</html>
+
+<script type="text/javascript" src="../js/slide.js"></script>  
+       
