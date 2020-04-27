@@ -6,7 +6,7 @@
 
 .display_container{
     box-sizing: border-box;
-    margin: 40px auto 220px;
+    margin: 40px auto 200px;
     width: 100%;
     /* border: dotted thin gray; */
 }
@@ -23,13 +23,13 @@
     border: 0;
     /* border: dotted thin red; */
 }
-@media screen and (min-width: 769px) {
-    .slide figcaption {
-        width: 65%;
-        margin: 0px auto;
-        padding: 5px 0px 5px; 
-        line-height: 1.2em; 
-        border: dotted thin blue; 
+
+.slide figcaption {
+    width: 65%;
+    margin: 0px auto;
+    padding: 5px 0px 5px; 
+    line-height: 1.2em; 
+    /* border: dotted thin blue; */
 }
 
 @media screen and (max-width: 768px) {
@@ -47,14 +47,14 @@
     .slide img {
         height: 36vh;
         width: auto;       
-        /* border: dotted thin blue; */
+         border: dotted thin red; 
     }
 }
 @media screen and (orientation: landscape) and (max-width: 768px) {
     .slide img {
         width: 80%;
         height: auto;
-        /* border: dotted thin blue; */
+        border: dotted thin green; 
     }
 }
 
