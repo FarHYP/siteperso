@@ -37,7 +37,7 @@
         margin: 20px auto 100px;
     }
     .slide figcaption {
-        width: 80%;
+        /* width: 80%; */
         margin: 0px auto;
         text-align: left; 
         border: dotted thin yellow; 
