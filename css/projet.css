@@ -5,25 +5,55 @@
     ------------------------  */
 
 .display_container{
-    margin: 40px auto 200px;
-    /* max-width: width 980px; */
-    width: 90%;
-    /* position: relative; */
+    box-sizing: border-box;
+    margin: 40px auto 220px;
+    width: 100%;
     /* border: dotted thin gray; */
 }
 .slide {
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
-    height: 81vh;
     /* border: dotted thin pink; */
 }
 .slide img {
     display: table;
     margin: auto;
-    height: 94%;
+    height: 78vh;
     width: auto;
     border: 0;
     /* border: dotted thin red; */
+}
+.slide figcaption {
+    width: 65%;
+    margin: 0px auto;
+    padding: 5px 0px 5px; 
+    line-height: 1.2em; 
+    /* border: dotted thin blue; */
+}
+
+@media screen and (max-width: 768px) {
+    .display_container{
+        margin: 20px auto 100px;
+    }
+    .slide figcaption {
+        width: 80%;
+        margin: 0px auto;
+        text-align: left; 
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    .slide img {
+        height: 36vh;
+        width: auto;       
+        border: dotted thin blue; 
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .slide img {
+        width: 80%;
+        height: auto;
+        border: dotted thin blue; 
+    }
 }
 
 
@@ -40,46 +70,33 @@
     display: inline-block;
     text-decoration: none;
     background-color: inherit;
+    color: inherit;
     cursor: pointer;
     white-space: nowrap;
     padding: 0px 20px;
     vertical-align: middle;
     text-align: center;
-    
 }
-
-/*
-.display_left{
-    position: absolute; 
-    top: 50%;
-    left: 0%;
-    transform: translate(0%,-50%);
-}
-.display_right{
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%,-50%);
-}
-*/
-
-
 
 
 /*  ------------------------
     Sub Menu
     ------------------------  */
+
+@media screen and (min-width: 769px) {
+    .sub_menu {
+        width: 50%;
+        position: fixed;
+        right: 80px;
+        top: 12px;
+
+        margin-top: -5px;
+        text-align: right;
+        /* border: thin solid pink; */
+    }
+}
 .sub_menu {
-    width: 50%;
-    position: fixed;
-    right: 80px;
-    top: 20px;
-
-    margin-top: -5px;
     line-height: 1.5em;
-    text-align: right;
-
-
     /* border: thin solid pink; */
 }
 .sub_menu_title {
@@ -88,6 +105,14 @@
 .titre {
     text-align: left;
     font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+    .sub_menu_title {
+        font-size: 0.8em;
+    }
+    .titre {
+        font-size: 1em;
+    }
 }
 
 /*  ------------------------
@@ -106,6 +131,7 @@
     /* border: thin solid pink; */
 }
 
+
 /*  ------------------------
     Retour
     ------------------------  */
@@ -117,5 +143,5 @@
 }
 
 main {
-    padding-bottom: 60px;
+    padding-bottom: 2%;
 }

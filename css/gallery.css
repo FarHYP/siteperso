@@ -19,9 +19,9 @@
         padding: 0px;
     }
     .sub_menu {
-        /*border: 1px dotted gray;
-        background: rgb(255, 215, 222);*/
-        padding: 40px;
+        /* border: 1px dotted gray; */
+        /* background: rgb(255, 215, 222);*/
+        padding: 0px 40px;
     }
 }
 @media screen and (min-width: 769px) {
@@ -69,13 +69,11 @@ main {
 .projet_list, .projet {
     box-sizing: border-box;
 }
-
 .projet_list {
     /* border: 1px dotted gray; */
     width: 70%;
     display: block;
 }
-
 .projet {
     /* display: box; */
     width: 100%;
@@ -84,18 +82,6 @@ main {
     padding-bottom: 22vh;
     /* border: thin dotted rgb(53, 160, 106); */
 }
-@media screen and (max-width: 768px) {
-    .projet_list {
-        width: 100%;
-    }
-    .projet {
-        padding-top: 8vh;
-        padding-bottom: 10vh;
-    }
-}
-
-
-
 .projet img{
     display: table;
     margin: auto;
@@ -112,20 +98,25 @@ main {
 .projet.pluslong img{
     width: 45%;
 }
-@media screen and (max-width: 768px) {
-    .projet.long img{
-        height: 56vh;
-        width: auto;
-    }
-}
-/*
-.projet.large img{
-    width: 78%;
-}
-*/
-
 .projet figcaption {
     text-align: center;
-    
 }
 
+@media screen and (max-width: 768px) {
+    .projet_list {
+        width: 100%;
+    }
+    .projet {
+        padding-top: 8vh;
+        padding-bottom: 10vh;
+    }
+    .projet img, .projet.long img, .projet.carre img, .projet.pluslong img {
+        width: 80%;
+        height: auto;      
+    }
+    .projet figcaption {
+        width: 80%;
+        margin: 0px auto;
+        text-align: left; 
+    }
+}
