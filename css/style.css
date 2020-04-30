@@ -149,7 +149,6 @@ body.index .main_menu:hover > .logo a:hover {
 body.index .menu_list {
     top: 60px;
     left: 20%;
-    /* border: 1px dotted gray; */
 }
 .menu_list li {
     padding: 4px 0px;
@@ -158,7 +157,6 @@ body.index .menu_list {
     display: inline-block; 
     padding: 5px 0px;
     font-size: 1em;
-    /* border: 1px dotted red; */
 }
 .menu_list a:hover {
     color: var(--link-hover-color);
@@ -253,11 +251,9 @@ body.index #voile {
     */
     header, main, footer {
         padding: 10px 25px;
-        border: 2px dotted violet; 
     }
 
     body.index .main_menu {
-        border: 1px dotted violet; 
     }
     .logo {
         line-height: 30px;
