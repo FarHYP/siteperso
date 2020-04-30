@@ -29,25 +29,72 @@
             <input type="checkbox" id="burger">
             <label for="burger" class="toggle"><!-- &#9776; --></label>
                
-            <nav class="main_menu">           
+            <nav class="main_menu" id="nav_zone">           
                 <h1 class="logo">
                     <a href="index.html" >Yi-Ping Huang</a>
                     <!-- 要檢查螢幕大小變化時 如果螢幕縮到最小 名字會被換行的問題 -->
                 </h1> 
-                <ul class="menu_list" id="topnav">
-                     <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+
+                <ul class="langue_list" id="lg_list">
+                    <li>
+                        <input type="radio" id="fr" name="langue" value="fr" class="langue" checked>
+                        <label for="fr">FR</label>
+                    </li>&thinsp;/
+                    <li>
+                        <input type="radio" id="en" name="langue" value="en"  class="langue">
+                        <label for="en">EN</label>
+                    </li>&thinsp;/
+                    <li>
+                        <input type="radio" id="zhtw" name="langue" value="zhtw"  class="langue">
+                        <label for="zhtw">繁</label>
+                    </li>&thinsp;       
+                </ul>
+                   
+                <!-- <ul class="menu_list menu_fr" id="topnav"> -->
+                <ul class="menu_list" id="menu_fr">
+                    <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
                     <li><a href="immersion_perf.html">Immersion&thinsp;/&thinsp;Performance</a></li>
                     <li><a href="#">Livre d'artiste&thinsp;/&thinsp;Écriture</a></li>
                     <li><a href="installation_sculpture.html">Installation&thinsp;/&thinsp;Sculpture </a></li>
                     <li><a href="estampe_edition.html">Estampe&thinsp;/&thinsp;Édition</a></li>
                     <li><a href="photographie.html">Photographie</a></li>
                     <li>&nbsp;</li>
+                    <!-- <li>&nbsp;</li> -->
                     <li><a href="#">Actualité</a></li>
                     <li><a href="#">Exposition</a></li>
                     <li><a href="a_propos.html">À propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav> 
+                <ul class="menu_list" id="menu_en">
+                    <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+                    <li><a href="immersion_perf.html">Immersion&thinsp;/&thinsp;Performance</a></li>
+                    <li><a href="#">Artists' book&thinsp;/&thinsp;Writing</a></li>
+                    <li><a href="installation_sculpture.html">Installation&thinsp;/&thinsp;Sculpture </a></li>
+                    <li><a href="estampe_edition.html">Printmaking&thinsp;/&thinsp;Edition</a></li>
+                    <li><a href="photographie.html">Photography</a></li>
+                    <li>&nbsp;</li>
+                    <!-- <li>&nbsp;</li> -->
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Exhibition</a></li>
+                    <li><a href="a_propos.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="menu_list" id="menu_zhtw">
+                    <!-- 要加上效果：滑鼠滑到主選單選項時 加上效果或記號標示 -->
+                    <li><a href="immersion_perf.html">沉浸式空間&thinsp;/&thinsp;行為藝術</a></li>
+                    <li><a href="#">藝術家書籍&thinsp;/&thinsp;寫作</a></li>
+                    <li><a href="installation_sculpture.html">裝置藝術&thinsp;/&thinsp;現代雕塑 </a></li>
+                    <li><a href="estampe_edition.html">版畫&thinsp;/&thinsp;複數性作品</a></li>
+                    <li><a href="photographie.html">攝影&thinsp;/&thinsp;畫報</a></li>
+                    <li>&nbsp;</li>
+                    <!-- <li>&nbsp;</li> -->
+                    <li><a href="#">近況</a></li>
+                    <li><a href="#">展覽</a></li>
+                    <li><a href="a_propos.html">關於我</a></li>
+                    <li><a href="contact.html">與我聯絡</a></li>
+                </ul>
+                
+            </nav>  
             <div id="voile"></div>
         </header>
         <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
@@ -319,6 +366,8 @@
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
         <!-- ----------------------版型 Footer 結束--------------------- -->
         
+
+        <script type="text/javascript" src="js/menu.js"></script>  
 
 
     </body>
