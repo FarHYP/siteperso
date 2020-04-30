@@ -421,10 +421,10 @@ body.index #voile {
 */
 
 /* !!!sub_menu 作品標題換行有bug */
-nav a {
+.menu_list a, .sub_menu a {
     position: relative;
 }
-nav a::before {
+.menu_list a::before, .sub_menu a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -439,14 +439,11 @@ nav a::before {
     -webkit-transition: all 1s ease-in-out 0s;
     transition: all 1s ease-in-out 0s;
 }
-nav a:hover::before {
+.menu_list a:hover::before, .sub_menu a:hover::before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-
-
 
 
 
