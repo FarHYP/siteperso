@@ -145,7 +145,6 @@ body.index .main_menu:hover > .logo a:hover {
     /* z-index: 1; */
 
     text-align: left; 
-    border: 1px dotted gray;
 }
 body.index .menu_list {
     top: 60px;
