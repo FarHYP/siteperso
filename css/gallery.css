@@ -5,40 +5,34 @@
     Sub-Menu for projets
     ------------------------  */
 .sub_menu {
-    padding: 20px 80px 20px 20px ;
-    display: box;
+    display: block;
+    background: white; 
+    
     font-size: 1.2rem;
     line-height: 1.7rem;
     word-wrap: break-word;  
-    background: white; 
     letter-spacing: 1px;
 }
 
 @media screen and (max-width: 768px) {
-    main {
-        padding: 0px;
-    }
-    .sub_menu {
-        /* border: 1px dotted gray; */
-        /* background: rgb(255, 215, 222);*/
-        padding: 0px 40px;
-    }
+    
 }
 @media screen and (min-width: 769px) {
     .sub_menu {
-        position: fixed;
         width: 30%;
         height: 95vh;
+        position: fixed; 
         top: 0px;
         left: 70%;
         padding-top: 450px;
+        padding-left: 20px;
+        padding-right: 80px; 
+        padding-bottom: 20px ; 
+    
 
         /* background: rgba(213, 213, 213, 0.4); */
         /* background: linear-gradient(rgb(186, 186, 186),rgb(255, 255, 255)); */
-
-        /* border: 1px dotted gray; */
         /* 加上從上滑下來的漸進效果 */
-
     }
 }
 
@@ -61,10 +55,6 @@
 /*  ------------------------
     Projet Gallery
     ------------------------  */
-
-main {
-    /* padding: 0px; */
-}
 
 .projet_list, .projet {
     box-sizing: border-box;

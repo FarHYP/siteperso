@@ -70,6 +70,8 @@ header {
     width: 100%;
     background-color: white;
     /* background-color: rgba(250, 138, 80, 0.3); */
+
+    z-index: 5;
 }
 body.index header {
     height: 100%;
@@ -91,6 +93,7 @@ body.index header {
     width: 280px;
     text-align: left;
     border: 1px dotted violet;
+    
     /* background-color: rgba(250, 172, 89, 0.3); */
 }
 body.index .main_menu {
