@@ -95,7 +95,7 @@ body.index header {
 }
 body.index .main_menu {
     width: 550px;
-    height: 90%;
+    height: 85%;
     
     margin-left: 5px;
     margin-top: 5px; 
@@ -285,6 +285,7 @@ body.index #voile {
     }
 
     body.index .main_menu {
+        width: 90%;
         border: 1px dotted violet; 
     }
     .logo {
