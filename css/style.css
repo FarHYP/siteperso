@@ -432,7 +432,7 @@ body.index #voile {
     border-radius: 2px;
     bottom: -1px;
     left: 0; 
-    background-color: rgb(113, 113, 113);
+    background-color: var(--link-hover-color);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
