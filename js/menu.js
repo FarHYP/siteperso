@@ -6,7 +6,7 @@ var otherMenuId;
 var preMId;
 
 /* Get default language setting */
-for(var i = 0; i < langue.length; i++ ) {
+for( var i = 0; i < langue.length; i++ ) {
     langue[i].addEventListener('click', changeDisplayMenu); 
 
     if (langue[i].checked) {
