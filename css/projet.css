@@ -143,6 +143,12 @@
     text-align: right;
     text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+    .retour {
+        padding-top: 150px;
+        font-size: 0.8em; 
+    }
+}
 
 main {
     padding-bottom: 2%;
