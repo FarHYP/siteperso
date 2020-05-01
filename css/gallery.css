@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+--main-LR-padding: 80px;
+}
+
 /*  ------------------------
     NAV:
     Sub-Menu for projets
@@ -12,6 +16,7 @@
     line-height: 1.7rem;
     word-wrap: break-word;  
     letter-spacing: 1px;
+    /* border: 1px dotted gray; */
 }
 
 @media screen and (max-width: 768px) {
@@ -20,13 +25,13 @@
 @media screen and (min-width: 769px) {
     .sub_menu {
         width: 30%;
-        height: 95vh;
+        height: 90vh;
         position: fixed; 
-        top: 0px;
+        bottom: 0px;
         left: 70%;
-        padding-top: 450px;
+        padding-top: 400px;
         padding-left: 20px;
-        padding-right: 80px; 
+        padding-right: var(--main-LR-padding); 
         padding-bottom: 20px ; 
     
 

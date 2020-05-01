@@ -5,7 +5,9 @@
     --main-txt-color: rgb(126, 126, 126);
     --light-txt-color: rgb(188, 188, 188);
     --link-hover-color: rgb(30, 30, 30);
-    
+
+    --main-LR-padding: 80px;
+    --small-LR-padding: 25px;
 }
 
 *, *::before, *::after {
@@ -48,12 +50,12 @@ a:hover, a:link, a:visited, a:active {
 
 header, footer {
     margin: 0;
-    padding: 10px 80px;
+    padding: 10px var(--main-LR-padding);
     /* border: 1px dotted red; */
 }
 main {
     margin: 0;
-    padding: 0px 80px;
+    padding: 0px var(--main-LR-padding);
 }
 
 
@@ -71,12 +73,13 @@ header {
     background-color: white;
     /* background-color: rgba(250, 138, 80, 0.3); */
 
-    z-index: 5;
+    
 }
 body.index header {
     height: 100%;
     padding: 10px 40px;
     background-color: transparent;
+    
     /* border: 1px dotted red; */
     /* background-color: rgba(250, 138, 80, 0.3); */
 }
@@ -90,9 +93,9 @@ body.index header {
 */
 .main_menu {
     display: block;  
-    width: 280px;
+    width: 250px;
     text-align: left;
-    border: 1px dotted violet;
+    /* border: 1px dotted violet; */
     
     /* background-color: rgba(250, 172, 89, 0.3); */
 }
@@ -119,23 +122,31 @@ body.index .main_menu {
     font-weight: bold;
     text-align: left;
     vertical-align: middle;   
-    /* border: 1px dotted violet; */
+    /* border: 1px dotted red; */
+
+    
 }
+
+/* LOGO color step 1 */
 .logo a {
     color: var(--light-txt-color);
 }
 body.index .logo a {
     color: var(--main-txt-color);
 }
-.main_menu:hover > .logo a {
+
+/* LOGO color step 2 */
+.main_menu:hover .logo a {
     color: var(--main-txt-color);
 }
-body.index .main_menu:hover > .logo a {
+body.index .main_menu:hover .logo a {
     color: rgb(73, 73, 73); 
 }
+
+/* LOGO color step 3 */
 .logo a:hover, 
-.main_menu:hover > .logo a:hover, 
-body.index .main_menu:hover > .logo a:hover {
+.main_menu:hover .logo a:hover, 
+body.index .main_menu:hover .logo a:hover {
     color: var(--link-hover-color);
 }
 
@@ -152,10 +163,13 @@ body.index .main_menu:hover > .logo a:hover {
     margin: 0px;
     /* z-index: 1; */
 
+    padding-top: 10px;
+    padding-bottom: 10px ;
     text-align: left; 
-    /* border: 1px dotted gray; */
+    /* border: 1px dotted gray; */  
 }
 body.index .menu_list {
+    padding: 0px 0px;
     top: 60px;
     left: 20%;
     /* border: 1px dotted gray; */
@@ -180,21 +194,29 @@ body.index .menu_list {
 ------------------------  
 */
 .langue_list {
-    display: none;
+    display: block;
     position: absolute; 
-    width: 230px; 
+    width: 110px; 
     margin: 0px;
-    top: 420px;
+    top: 25px; 
+    right: var(--main-LR-padding);
+    
 
     font-size: 0.9em;
     text-align: right;
     /* border: 1px dotted gray; */
+    /* background-color: rgba(150, 177, 235, 0.2); */
 }
 body.index .langue_list {
     left: 20%;
+    top: 420px;
+    width: 230px; 
+    display: none;
+    
 }
 .langue_list li {
     display: inline;
+    line-height: 20px;
 }
 .langue_list input {
     display: none; 
@@ -283,8 +305,11 @@ body.index #voile {
     ------------------------  
     */
     header, main, footer {
-        padding: 10px 25px;
+        padding: 10px var(--small-LR-padding);
         /* border: 2px dotted violet; */
+    }
+    header {
+        z-index: 5; 
     }
 
     body.index .main_menu {
@@ -293,17 +318,18 @@ body.index #voile {
     }
     .logo {
         line-height: 30px;
-        font-size: 1.8rem;
+        font-size: 1.3em;
     }
     .menu_list li {
         padding: 2px 0px;
     }
     .menu_list a {
         padding: 3px 0px;
-        font-size: 1.2rem;
+        font-size: 0.9em;
     }  
     .langue_list {
-        font-size: 1rem;
+        font-size: 0.8em;
+        top: 20px; 
     }
     
     body.index .menu_list, body.index .langue_list {
@@ -384,17 +410,17 @@ body.index #voile {
     @media screen and (max-height: 500px) { 
         .logo {
             line-height: 30px;
-            font-size: 1.8rem;
+            font-size: 1.3em;
         }
         .menu_list li {
             padding: 2px 0px;
         }
         .menu_list a {
             padding: 3px 0px;
-            font-size: 1.2rem;
+            font-size: 1em;
         }  
         .langue_list {
-            font-size: 1rem;
+            font-size: 0.8em;
         }
 
         body.index .menu_list, body.index .langue_list {
