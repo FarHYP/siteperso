@@ -15,7 +15,7 @@ if ( sysNavLang.length >= 2 ) {
     }
 }
 
-/*
+
 var sysinfo = document.getElementById("sysinfo");
 sysinfo.innerHTML = sysNavLang;
-*/
+
