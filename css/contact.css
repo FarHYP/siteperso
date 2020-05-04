@@ -12,7 +12,7 @@
     display: block;
     float: left;
     height: 400px;
-    margin-right: 80px;
+    margin-right: var(--main-LR-padding);
     /* border: 1px dotted green; */
     
 }

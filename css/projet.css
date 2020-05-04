@@ -47,7 +47,7 @@
     .slide img {
         height: 36vh;
         width: auto;       
-         border: dotted thin red; 
+        border: dotted thin red;
     }
 }
 @media screen and (orientation: landscape) and (max-width: 768px) {
@@ -87,18 +87,27 @@
 
 @media screen and (min-width: 769px) {
     .sub_menu {
-        width: 50%;
+        
         position: fixed;
+        /*
+        width: 50%;
         right: 80px;
-        top: 12px;
-
+        top: 12px; 
         margin-top: -5px;
         text-align: right;
+        */
+
+        width: 50%;
+        right: var(--main-LR-padding);
+        top: 55px; 
+        margin-top: -5px;
+        text-align: right;
+        background-color: white;
         /* border: thin solid pink; */
     }
 }
 .sub_menu {
-    line-height: 1.5em;
+    line-height: 1.4em;
     /* border: thin solid pink; */
 }
 .sub_menu_title {

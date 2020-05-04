@@ -12,8 +12,8 @@
     width: 35%;
     display: block;    
     float: right;
-    margin-left: 40px;
-    margin-bottom: 40px;
+    margin-left: var(--demi-padding);
+    margin-bottom: var(--demi-padding);
     
 }
 
@@ -26,6 +26,7 @@ figcaption {
     display: inline-block;
     vertical-align: middle;
     line-height: 1.2em;
+    text-align: left;
 }
 
 .a_propos::after {
@@ -39,9 +40,9 @@ figcaption {
         width: 100%;
     }
     .autoportrait img {
-
         display: table;
         width: 70%;
+        /* border: 1px dotted red; */
     }
     figcaption {
         width: 70%;
