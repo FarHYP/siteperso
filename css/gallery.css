@@ -133,3 +133,45 @@
         text-align: left; 
     }
 }
+
+
+
+
+
+section.projet {
+    display: block;
+    width: 100%;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+
+section.projet .t_extrait {
+    display: table;
+    width: 78%;
+    padding: 2%;
+    border: thin dotted var(--light-txt-color);
+    box-shadow: 3px 3px var(--light-txt-color);
+}
+section.projet small {
+    font-size: 0.8em;
+}
+
+
+
+div.projet {
+    display: block;
+    width: 100%;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+
+div.projet .t_extrait {
+    display: table;
+    width: 78%;
+    padding: 2%;
+    border: thin dotted var(--light-txt-color);
+    box-shadow: 3px 3px var(--light-txt-color);
+}
+div.projet small {
+    font-size: 0.8em;
+}

@@ -6,6 +6,8 @@
     --light-txt-color: rgb(188, 188, 188);
     --link-hover-color: rgb(30, 30, 30);
 
+    --second-txt-color: rgba(78, 108, 173, 0.8);
+
     --main-LR-padding: 5%; /* 80px for screen width=1400px */
     --demi-padding: 2.5%; /* 80px for screen width=1400px */
     --small-LR-padding: 25px;
@@ -169,7 +171,6 @@ body.index .main_menu:hover .logo a:hover {
     position: absolute; 
     width: 230px;
     margin: 0px;
-    /* z-index: 1; */
 
     padding-top: 10px;
     padding-bottom: 10px ;
@@ -579,7 +580,7 @@ figcaption {
 }
 
 .t_bleu {
-    color: rgba(78, 108, 173, 0.8);
+    color: var(--second-txt-color);
     /* border: 1px dashed deeppink; */
 }
 

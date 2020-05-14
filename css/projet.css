@@ -6,7 +6,7 @@
 
 .display_container{
     box-sizing: border-box;
-    margin: 40px auto 200px;
+    margin: 40px auto 20%;
     width: 100%;
     /* border: dotted thin gray; */
 }
@@ -91,23 +91,22 @@
         position: fixed;
         /*
         width: 50%;
-        right: 80px;
-        top: 12px; 
-        margin-top: -5px;
-        text-align: right;
+        right: var(--main-LR-padding); 
         */
 
         width: 50%;
-        right: var(--main-LR-padding);
+        right: 0;
         top: 55px; 
         margin-top: -5px;
+        padding-right: var(--main-LR-padding);
         text-align: right;
         background-color: white;
-        /* border: thin solid pink; */
+        /* border: thin solid pink;  */
+        z-index: 0;
     }
 }
 .sub_menu {
-    line-height: 1.4em;
+    line-height: 1.5em;
     /* border: thin solid pink; */
 }
 .sub_menu_title {
@@ -142,6 +141,23 @@
     /* border: thin solid pink; */
 }
 
+.projet_info .legend a {
+    color: var(--second-txt-color);
+}
+
+
+.texte {
+    margin: 10% 15% 20%;
+    padding: 3%;
+    border: thin solid var(--light-txt-color);
+    box-shadow: 3px 5px var(--light-txt-color);
+    
+}
+
+.texte_titre {
+    font-size: 1.2em;
+    
+}
 
 /*  ------------------------
     Retour
