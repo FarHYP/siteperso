@@ -567,12 +567,14 @@ img {
     height:auto;
 }
 
-figcaption {
+figcaption, .txtcaption {
+    display: block;
     letter-spacing: 1px;
     text-align: center;
+    /* border: 1px dashed deeppink; */
 }
 @media screen and (max-width: 768px) {
-    figcaption {
+    figcaption, .txtcaption {
         /* width: 100%; */
         font-size: 1em; 
         /* border: 1px dashed deeppink; */
