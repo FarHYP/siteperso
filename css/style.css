@@ -337,9 +337,15 @@ body.index #voile {
     }  
     .langue_list {
         font-size: 0.8em;
-        top: 20px; 
+        top: 50px; 
+
+        right: 13px;
+        /* lange_list靠右對齊有問題 */
+        /* right: var(--small-LR-padding); */
+        /* border: 1px dotted red; */
     }
     
+
     body.index .menu_list, body.index .langue_list {
         width: 220px;
         left: 330px;
