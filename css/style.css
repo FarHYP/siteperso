@@ -338,11 +338,10 @@ body.index #voile {
     .langue_list {
         font-size: 0.8em;
         top: 50px; 
-
+        padding-bottom: 5px;
         right: 13px;
-        /* lange_list靠右對齊有問題 */
-        /* right: var(--small-LR-padding); */
-        /* border: 1px dotted red; */
+        width: 100%;
+        background-color: white;
     }
     
 

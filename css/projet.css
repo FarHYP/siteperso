@@ -150,10 +150,11 @@
     /* margin: 10% 15% 20%; */
     width: auto;
     margin: 5% 15% 3px;
-    padding: 3%;
+    padding: 3% 5%;
     border: thin solid var(--light-txt-color);
     box-shadow: 3px 3px 2px var(--light-txt-color);
 }
+
 
 
 .texte_titre {
