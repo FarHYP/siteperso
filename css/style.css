@@ -322,7 +322,7 @@ body.index #voile {
 
     body.index .main_menu {
         width: 90%;
-        border: 1px dotted violet; 
+        /*border: 1px dotted violet; */
     }
     .logo {
         line-height: 30px;
