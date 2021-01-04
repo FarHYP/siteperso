@@ -154,6 +154,11 @@
     border: thin solid var(--light-txt-color);
     box-shadow: 3px 3px 2px var(--light-txt-color);
 }
+@media screen and (max-width: 768px) {
+    .texte {
+        margin: 5% 5% 3px;
+    }
+}
 
 
 
