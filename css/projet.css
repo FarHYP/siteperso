@@ -54,7 +54,7 @@
     .slide img {
         width: 80%;
         height: auto;
-        border: dotted thin green; 
+        /* border: dotted thin green; */
     }
 }
 
