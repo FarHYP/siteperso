@@ -341,7 +341,7 @@ body.index #voile {
         padding-bottom: 5px;
         right: 13px;
         width: 100%;
-        background-color: white;
+        /* background-color: white; */
     }
     
 
@@ -378,24 +378,29 @@ body.index #voile {
 
     @media screen and (max-height: 375px) { 
         body.index .menu_list, body.index .langue_list {
-            left: 290px;
+            /* background-color: rgb(239, 250, 176); */
+            left: 280px;
         }
         body.index .menu_list {
-            top: 50px; 
+            top: 40px; 
         }
         body.index .langue_list {
-            top: 320px; 
+            width:110px;
+            top: 210px; 
+            left: 100px;
         }
     }
+    /*
     @media screen and (max-height: 320px) { 
         body.index .menu_list, body.index .langue_list {
-            /* background-color: rgb(176, 229, 250); */
+             background-color: rgb(176, 229, 250); 
             left: 270px;
         }
         body.index .menu_list {
             top: 50px; 
         }
     }
+    */
 }
 
 
