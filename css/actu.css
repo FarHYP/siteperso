@@ -27,6 +27,7 @@ figcaption {
     display: inline-block;
     vertical-align: middle;
     line-height: 1.2em;
+    margin: 0px auto;
     text-align: left;
 }
 
@@ -38,16 +39,18 @@ figcaption {
 
 @media screen and (max-width: 768px) {
     .news {
+        /* border: 1px dotted blue; */
         width: 100%;
     }
     .news img {
-        display: table;
-        width: 70%;
+        display: table;   
+        width: 80%;
         /* border: 1px dotted red; */
     }
-    figcaption {
-        width: 70%;
-        margin: 0px 15%;
+    .news figcaption {
+        width: 80%;
+        margin: 3px 10%;
+        /* border: 1px dotted green; */
     }
 }
 
