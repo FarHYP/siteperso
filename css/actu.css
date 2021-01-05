@@ -5,7 +5,7 @@
     ------------------------  */
 .actu {
     box-sizing: border-box;
-    border: thin solid red;
+    /* border: thin solid red; */
 }
 
 .news {
