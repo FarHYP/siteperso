@@ -21,9 +21,7 @@
     width: 100%;
 }
 
-/*
-@media screen and (min-width: 769px) {
-    */
+
 @media screen and (min-width: 769px) {
     .sub_menu {
         width: 30%;
@@ -34,10 +32,6 @@
         
         padding-left: 1%;
         padding-bottom: 15vh ; 
-        
-        /* background: rgba(213, 213, 213, 0.4); */
-        /* background: linear-gradient(rgb(186, 186, 186),rgb(255, 255, 255)); */
-        /* 加上從上滑下來的漸進效果 */
     }
 
     
@@ -66,11 +60,26 @@
     /* border: thin dotted rgb(53, 160, 106); */
 }
 
-/*
-.sub_menu a:hover {
-    font-style: italic;
+
+.sub_menu a {
+    position: relative;
+    width: 100%;
+    
+    background-image: linear-gradient(
+        transparent 50%,
+        rgba(255,69,0,0.2) 100% 
+    );
+    
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s;
 }
-*/
+.sub_menu a:hover {
+    background-size: 100% 100%;
+    /* border: thin dotted rgb(53, 160, 106); */
+    /* font-weight: bold; */
+}
+
 
 
 
@@ -88,18 +97,21 @@
     display: block;
 }
 .projet {
-    /* display: box; */
+    display: block;
     width: 100%;
     padding: 0px;
     padding-top: 8vh;
     padding-bottom: 22vh;
     /* border: thin dotted rgb(53, 160, 106); */
 }
-.projet img{
+
+.projet img, .projet .t_extrait{
     display: table;
     margin: auto;
     width: 78%;
     height: auto;
+}
+.projet img{
     border: 0;
 }
 .projet.long img{
@@ -111,8 +123,21 @@
 .projet.pluslong img{
     width: 44%;
 }
-.projet figcaption {
+.projet figcaption, .projet .txtcaption {
     text-align: center;
+    margin: 3px 11%; 
+    /* border: 1px dotted red; */
+}
+
+
+.projet .t_extrait {
+    padding: 2%;
+    border: thin dotted var(--light-txt-color);
+    box-shadow: 3px 3px 2px var(--light-txt-color);
+    /*border: 1px dotted pink; */
+}
+.projet small {
+    font-size: 0.8em;
 }
 
 @media screen and (max-width: 768px) {
@@ -123,44 +148,22 @@
         padding-top: 8vh;
         padding-bottom: 10vh;
     }
-    .projet img, .projet.long img, .projet.carre img, .projet.pluslong img {
+    .projet img, .projet.long img, .projet.carre img, .projet.pluslong img, 
+    .projet .t_extrait,
+    .projet figcaption, .projet .txtcaption {
         width: 80%;
         height: auto;      
     }
-    .projet figcaption {
-        width: 80%;
+    .projet figcaption, .projet .txtcaption {
         margin: 0px auto;
         text-align: left; 
     }
 }
 
-
-
-
-
-section.projet {
-    display: block;
-    width: 100%;
-    margin-top: 8vh;
-    margin-bottom: 15vh;
-    /* border: 1px dotted blue; */
+.projet img:hover{
+    opacity: 0.7;
 }
-
-section.projet .t_extrait {
-    display: table;
-    width: 78%;
-    padding: 2%;
-    margin: auto;
-    border: thin dotted var(--light-txt-color);
-    box-shadow: 3px 3px 2px var(--light-txt-color);
-    /* border: 1px dotted blue; */
-}
-section.projet small {
-    font-size: 0.8em;
-}
-
-section.projet .txtcaption {
-    margin: 3px auto;
-    text-align: center;
-    /* border: 1px dotted gray; */
+.projet .t_extrait:hover {
+    color: var(--link-hover-color);
+    box-shadow: 5px 5px 3px var(--light-txt-color);
 }

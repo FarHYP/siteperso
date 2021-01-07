@@ -41,9 +41,12 @@ body {
     letter-spacing: 0.6px;
     color: var(--main-txt-color);
 }
+
+/*
 body.index {
-    /* opacity: 0.7; */
+    opacity: 0.7;
 }
+*/
 
 a:hover, a:link, a:visited, a:active {
     color: var(--main-txt-color);
@@ -464,11 +467,10 @@ body.index #voile {
 ------------------------  
 */
 
-/* !!!sub_menu 作品標題換行有bug */
-.menu_list a, .langue_list a, .sub_menu a {
+.menu_list a, .langue_list a {    
     position: relative;
 }
-.menu_list a::before, .langue_list a::before, .sub_menu a::before {
+.menu_list a::before, .langue_list a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -493,12 +495,15 @@ body.index #voile {
     -o-transition: all 1s ease-in-out 0s;
     transition: all 1s ease-in-out 0s;
 */
+
 }
-.menu_list a:hover::before, .langue_list a:hover::before, .sub_menu a:hover::before {
+
+.menu_list a:hover::before, .langue_list a:hover::before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
 
 
 
@@ -558,9 +563,9 @@ h4 {
 }
 
 main section {
-    margin-bottom: 20px;
     padding-top: 60px;
-    /*border: 1px dashed deeppink; */
+    /* padding-bottom: 20px; */
+    /* border: 1px dashed deeppink; */
 }
 
 main p {

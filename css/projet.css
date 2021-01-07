@@ -24,7 +24,7 @@
     /* border: dotted thin red; */
 }
 
-.slide figcaption {
+.slide figcaption, .slide .txtcaption {
     width: 65%;
     margin: 0px auto;
     padding: 8px 0px 8px; 
@@ -36,7 +36,7 @@
     .display_container{
         margin: 20px auto 100px;
     }
-    .slide figcaption {
+    .slide figcaption, .slide .txtcaption {
         width: 80%;
         margin: 0px auto;
         /* border: dotted thin yellow; */
@@ -62,9 +62,10 @@
 .slide_ctrl { 
     text-align: center;
     vertical-align: bottom;
-    font-size: 0.9em; 
+    font-size: 1em; 
     color: rgb(188, 188, 188);
     line-height: 1em;
+    margin-top: 3px;
     /* border: thin solid pink; */
 }
 .slides_btn{
@@ -78,6 +79,7 @@
     padding: 0px 20px;
     vertical-align: middle;
     text-align: center;
+    font-size: 1em; 
 }
 
 
@@ -149,6 +151,7 @@
 
 .texte {
     /* margin: 10% 15% 20%; */
+    /* width: auto; */
     width: auto;
     margin: 5% 15% 3px;
     padding: 3% 5%;
@@ -160,22 +163,43 @@
         margin: 3% 0% 3px;
     }
 }
+
+.paragraphe {
+    float: left;
+    width: 50%;
+    padding-left: 8%;
+    /* border: thin solid pink; */
+}
+
+.texte::after {
+    content: '';
+    display: block;
+    clear: both;
+    /* border: thin solid red; */
+}
+
+.texte_titre {
+    font-size: 1.2em;
+}
+
+
+/*
 @media screen and (orientation: landscape) and (max-width: 768px) {
+*/
+@media screen and (max-width: 768px) {
     .texte {
         margin: 3% 10% 3px;
+    }
+    .paragraphe {
+        margin-bottom: 30px;
+        width: 100%;
+        padding-left: 10%;
+        /* border: thin solid red; */
     }
 }
 
 
 
-.texte_titre {
-    font-size: 1.2em;
-    
-}
-
-.paragraphe {
-    border: thin solid red;
-}
 
 /*  ------------------------
     Retour
